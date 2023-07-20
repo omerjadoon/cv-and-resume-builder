@@ -1,0 +1,29 @@
+{
+  "avatar": {
+    "menu": {
+      "greeting": "Hello",
+      "logout": "Logout"
+    }
+  },
+  "footer": {
+    "credit": "",
+    "license": ""
+  },
+  "markdown": {
+    "help-text": "This section supports <1>markdown</1> formatting."
+  },
+  "date": {
+    "present": "Present"
+  },
+  "subtitle": "You can create AI assisted CV and Resume in few clicks and can choose from a number of Built in Resume Templates we offer and can get right jobs according to your qualifications and skills. All in one Place. .",
+  "title": "CV Builder and Job Portal",
+  "toast": {
+    "error": {
+      "upload-file-size": "Please upload only files under 2 megabytes.",
+      "upload-photo-size": "Please upload only photos under 2 megabytes, preferably square."
+    },
+    "success": {
+      "resume-link-copied": "A link to your resume has been copied to your clipboard."
+    }
+  }
+}
