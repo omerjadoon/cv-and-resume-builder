@@ -2,6 +2,10 @@
   "name": "reactive-resume",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "^16.15.0",
+    "npm": "^9.6.2"
+  },
   "scripts": {
     "dev": "env-cmd --silent cross-var cross-env VERSION=$npm_package_version turbo run dev",
     "build": "env-cmd --silent cross-var cross-env VERSION=$npm_package_version turbo run build",
