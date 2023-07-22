@@ -1,6 +1,7 @@
 
 import { Basics, Metadata, Section } from '@reactive-resume/schema';
 import { Column, CreateDateColumn, Entity, ManyToOne, PrimaryGeneratedColumn, Unique, UpdateDateColumn } from 'typeorm';
+
 import { User } from '@/users/entities/user.entity';
 
 @Entity()

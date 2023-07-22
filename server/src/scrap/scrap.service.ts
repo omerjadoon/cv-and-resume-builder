@@ -1,7 +1,7 @@
 
 import { CreateScrapDto } from './dto/create-scrap.dto';
-import { UpdateScrapDto } from './dto/update-scrap.dto';
 import { LinkedinScrapDto } from './dto/linkedin-scrap.dto';
+import { UpdateScrapDto } from './dto/update-scrap.dto';
 const {linkedinScrape} = require('./linkedinScraper')
 const fs = require('fs');
 
@@ -104,10 +104,10 @@ console.log(createScrapDto.title)
     // const title , location = ...linkedinScrapDto;
   const { title, location } = linkedinScrapDto;
    
-    let result = await linkedinScrape(title, location)
+    const result = await linkedinScrape(title, location)
 
-    let rawdata = fs.readFileSync('linkedin_scraped_data.json');
-    let dataObj = JSON.parse(rawdata);
+    const rawdata = fs.readFileSync('linkedin_scraped_data.json');
+    const dataObj = JSON.parse(rawdata);
 
 
     return dataObj;

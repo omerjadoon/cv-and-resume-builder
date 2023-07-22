@@ -1,38 +1,27 @@
+/* eslint-disable unused-imports/no-unused-vars */
 
-import env from '@beam-australia/react-env';
 import Button from '@mui/material/Button';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { Resume } from '@reactive-resume/schema';
-import axios from "axios";
 import { useRouter } from 'next/router';
-import { useTranslation } from 'next-i18next';
 import { useState } from 'react';
-import toast from 'react-hot-toast';
 import { useMutation } from 'react-query';
 
-import { RESUMES_QUERY } from '@/constants/index';
 import { ServerError } from '@/services/axios';
-import queryClient from '@/services/react-query';
 import { deleteResume, DeleteResumeParams, duplicateResume, DuplicateResumeParams } from '@/services/resume';
-import { useAppDispatch } from '@/store/hooks';
-import { setModalState } from '@/store/modal/modalSlice';
-import getResumeUrl from '@/utils/getResumeUrl';
-import { Scrap } from 'src/scrap/entities/scrap.entity';
+import { createScrap,CreateScrapParams } from '@/services/scrap';
 
 import styles from './ResumePreview.module.scss';
-import { createScrap,getScrapByUser } from '@/services/scrap';
-import { useQuery } from 'react-query';
+
 
 type Props = {
-  resume: Resume;
+  rows: any[];
 };
 
-const RecommendationCard: React.FC<Props> = ({ rows :rows,typ:typ }) => {
+const RecommendationCard: React.FC<Props> = ({rows}) => {
   const router = useRouter();
 
-  const { t } = useTranslation();
 
-  const dispatch = useAppDispatch();
 
   const columns: GridColDef[] = [
   // { field: 'id', headerName: 'ID', headerClassName: 'superHeader', width: 70 },
@@ -50,27 +39,9 @@ const RecommendationCard: React.FC<Props> = ({ rows :rows,typ:typ }) => {
     sortable: false,
 
     renderCell: (params) => {
-      const onClick = (e) => {
+      const onClick = (e:any) => {
         e.stopPropagation(); // don't select this row after clicking
 
-        const api: GridApi = params.api;
-        const thisRow: Record<string, GridCellValue> = {};
-
-        const serverUrl = env('SERVER_URL');
-
-        //axios.post<Resume, AxiosResponse<Resume>, CreateResumeParams>('/resume', createResumeParams).then((res) => res.data);
-        //store the job for future.
-      //   axios.post(serverUrl+`/scrap`, params.row)
-      // .then(res => {
-      //   console.log(res.data);
-      //   console.log(params.row)
-      //   window.open(params.row.link, '_blank').focus();
-      // })
-      // .catch(err => console.log(err));
-
-        // getScrapByUser(2).then(res => {
-        //   console.log(res);
-        // });
 
         sendRowToServer(params.row);
         
@@ -84,12 +55,16 @@ const RecommendationCard: React.FC<Props> = ({ rows :rows,typ:typ }) => {
   
 ];
 
-  const sendRowToServer = (myrow)=>{
+  const sendRowToServer = (myrow:CreateScrapParams)=>{
+
+    const mylink = "http:www.google.com";
+   
     createScrap(myrow).then(res => {
-      console.log("hello"+res);
-        console.log(myrow);
-        // console.log(params.row)
-        window.open(myrow.link, '_blank').focus();
+      const url = myrow?.url ?? 'www.google.com';
+
+      // Open the URL in a new tab
+      window.open(url, '_blank')?.focus();
+
       })
       .catch(err => console.log(err));
     }
@@ -103,71 +78,7 @@ const RecommendationCard: React.FC<Props> = ({ rows :rows,typ:typ }) => {
 
   const { mutateAsync: deleteMutation } = useMutation<void, ServerError, DeleteResumeParams>(deleteResume);
 
-  const handleOpen = () => {
-    handleClose();
-
-    router.push({
-      pathname: '/[username]/[slug]/build',
-      query: { username: resume.user.username, slug: resume.slug },
-    });
-  };
-
-  const handleOpenMenu = (event: React.MouseEvent<Element>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  const handleRename = () => {
-    handleClose();
-
-    dispatch(
-      setModalState({
-        modal: 'dashboard.rename-resume',
-        state: {
-          open: true,
-          payload: {
-            item: resume,
-            onComplete: () => {
-              queryClient.invalidateQueries(RESUMES_QUERY);
-            },
-          },
-        },
-      })
-    );
-  };
-
-  const handleDuplicate = async () => {
-    handleClose();
-
-    await duplicateMutation({ id: resume.id });
-
-    queryClient.invalidateQueries(RESUMES_QUERY);
-  };
-
-  const handleShareLink = async () => {
-    handleClose();
-
-    const url = getResumeUrl(resume, { withHost: true });
-    await navigator.clipboard.writeText(url);
-
-    toast.success(t<string>('common.toast.success.resume-link-copied'));
-  };
-
-  const handleDelete = async () => {
-    handleClose();
-
-    await deleteMutation({ id: resume.id });
-
-    queryClient.invalidateQueries(RESUMES_QUERY);
-  };
-
-
-  const is_history = (typ == "history"); 
-
-console.log(is_history)
+  
 
   
 
@@ -201,8 +112,7 @@ console.log(is_history)
           columns: {
             columnVisibilityModel: {
               // Hide columns status and traderName, the other columns will remain visible
-              url: !is_history,
-              
+             
             },
           },
         }}
@@ -210,8 +120,7 @@ console.log(is_history)
         checkboxSelection
       />
     </div>
-     
-<h3>{typ}</h3>
+
       
     </section>
   );

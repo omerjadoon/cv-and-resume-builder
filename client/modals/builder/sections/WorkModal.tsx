@@ -1,3 +1,4 @@
+import { GrammarlyEditorPlugin } from "@grammarly/editor-sdk-react";
 import { joiResolver } from '@hookform/resolvers/joi';
 import { Add, DriveFileRenameOutline } from '@mui/icons-material';
 import { Button, TextField } from '@mui/material';
@@ -17,7 +18,6 @@ import { VALID_URL_REGEX } from '@/constants/index';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { setModalState } from '@/store/modal/modalSlice';
 import { addItem, editItem } from '@/store/resume/resumeSlice';
-import { GrammarlyEditorPlugin } from "@grammarly/editor-sdk-react";
 
 type FormData = WorkExperience;
 
@@ -58,12 +58,12 @@ const WorkModal: React.FC = () => {
   const isEditMode = useMemo(() => !!item, [item]);
 
   const addText = useMemo(
-    () => t<string>('builder.common.actions.add', { token: t<string>(`builder.leftSidebar.${path}.heading`, heading) }),
+    () => t<string>('builder.common.actions.add', { token: t<string>(`builder.leftSidebar.${path}.heading`) }),
     [t, heading]
   );
   const editText = useMemo(
     () =>
-      t<string>('builder.common.actions.edit', { token: t<string>(`builder.leftSidebar.${path}.heading`, heading) }),
+      t<string>('builder.common.actions.edit', { token: t<string>(`builder.leftSidebar.${path}.heading`) }),
     [t, heading]
   );
 

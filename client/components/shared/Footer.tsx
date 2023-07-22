@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { Trans, useTranslation } from 'next-i18next';
+import { useTranslation } from 'next-i18next';
 
 type Props = {
   className?: string;

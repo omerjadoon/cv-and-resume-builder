@@ -1,8 +1,16 @@
-import env from '@beam-australia/react-env';
-import { Scrap } from 'src/scrap/entities/scrap.entity';
 import { AxiosResponse } from 'axios';
 
-import isBrowser from '@/utils/isBrowser';
+export type Scrap =  {
+  id: number;
+  title: string;
+  website: string;
+  date: string;
+  company: string;
+  location: string;
+  link: string;
+  userId: number;
+
+}
 
 import axios from './axios';
 
@@ -13,7 +21,7 @@ export type CreateScrapParams = {
   job_date: string;
   company: string;
   job_location: string;
-  url: string;
+  url: string | undefined;
 };
 
 export type GetScrapByUserParams = {
@@ -90,7 +98,7 @@ export const createScrap = (createScrapParams: CreateScrapParams) =>
 
 
 export const getScrapByUser = async ({userId}: GetScrapByUserParams) =>
-  axios.get<Scrap>('/scrap/oneuserscraps').then((res) => res.data);
+  axios.get<Scrap[]>('/scrap/oneuserscraps').then((res) => res.data);
 
 
 // export const renameResume = (renameResumeParams: RenameResumeParams) =>

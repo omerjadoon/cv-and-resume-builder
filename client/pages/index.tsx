@@ -1,26 +1,20 @@
-import { DarkMode, LightMode, Link as LinkIcon } from '@mui/icons-material';
-import { Masonry } from '@mui/lab';
+import { DarkMode, LightMode } from '@mui/icons-material';
 import { Button, IconButton, NoSsr } from '@mui/material';
 import type { GetStaticProps, NextPage } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
-import { Trans, useTranslation } from 'next-i18next';
+import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import Testimony from '@/components/landing/Testimony';
 import Footer from '@/components/shared/Footer';
 import LanguageSwitcher from '@/components/shared/LanguageSwitcher';
 import Logo from '@/components/shared/Logo';
-import { screenshots } from '@/config/screenshots';
 import { FLAG_DISABLE_SIGNUPS } from '@/constants/flags';
-import testimonials from '@/data/testimonials';
 import { logout } from '@/store/auth/authSlice';
 import { setTheme } from '@/store/build/buildSlice';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { setModalState } from '@/store/modal/modalSlice';
 import styles from '@/styles/pages/Home.module.scss';
 
-import { DIGITALOCEAN_URL, DOCS_URL, DONATION_URL, GITHUB_URL, REDDIT_URL } from '../constants';
 
 export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => ({
   props: {

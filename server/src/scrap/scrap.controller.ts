@@ -1,13 +1,14 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete ,UseGuards} from '@nestjs/common';
-import { ScrapService } from './scrap.service';
-import { CreateScrapDto } from './dto/create-scrap.dto';
-import { UpdateScrapDto } from './dto/update-scrap.dto';
-import { LinkedinScrapDto } from './dto/linkedin-scrap.dto';
+import { Body, Controller, Delete ,Get, Param, Patch, Post, UseGuards} from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
 
 import { JwtAuthGuard } from '@/auth/guards/jwt.guard';
 import { OptionalJwtAuthGuard } from '@/auth/guards/optional-jwt.guard';
 import { User } from '@/decorators/user.decorator';
+
+import { CreateScrapDto } from './dto/create-scrap.dto';
+import { LinkedinScrapDto } from './dto/linkedin-scrap.dto';
+import { UpdateScrapDto } from './dto/update-scrap.dto';
+import { ScrapService } from './scrap.service';
 
 
 

@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { Scrap } from 'src/scrap/entities/scrap.entity';
 
 import { Resume } from '@/resume/entities/resume.entity';
 import { User } from '@/users/entities/user.entity';
-import { Scrap } from 'src/scrap/entities/scrap.entity';
 
 @Module({
   imports: [

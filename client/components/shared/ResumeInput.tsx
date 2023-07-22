@@ -1,3 +1,4 @@
+import { GrammarlyEditorPlugin } from "@grammarly/editor-sdk-react";
 import { TextField } from '@mui/material';
 import { DatePicker } from '@mui/x-date-pickers';
 import dayjs from 'dayjs';
@@ -9,7 +10,6 @@ import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { setResumeState } from '@/store/resume/resumeSlice';
 
 import MarkdownSupported from './MarkdownSupported';
-import { GrammarlyEditorPlugin } from "@grammarly/editor-sdk-react";
 
 interface Props {
   type?: 'text' | 'textarea' | 'date';

@@ -14,8 +14,8 @@ import { IntegrationsModule } from './integrations/integrations.module';
 import { MailModule } from './mail/mail.module';
 import { PrinterModule } from './printer/printer.module';
 import { ResumeModule } from './resume/resume.module';
-import { UsersModule } from './users/users.module';
 import { ScrapModule } from './scrap/scrap.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [

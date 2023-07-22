@@ -1,41 +1,25 @@
 
-import env from '@beam-australia/react-env';
-import Button from '@mui/material/Button';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
-import { Resume } from '@reactive-resume/schema';
-import axios from "axios";
-import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
-import { useState,useEffect } from 'react';
-import toast from 'react-hot-toast';
-import { useMutation } from 'react-query';
+import { useEffect,useState } from 'react';
 
-import { RESUMES_QUERY } from '@/constants/index';
-import { ServerError } from '@/services/axios';
-import queryClient from '@/services/react-query';
-import { deleteResume, DeleteResumeParams, duplicateResume, DuplicateResumeParams } from '@/services/resume';
-import { useAppDispatch } from '@/store/hooks';
-import { setModalState } from '@/store/modal/modalSlice';
-import getResumeUrl from '@/utils/getResumeUrl';
-import { Scrap } from 'src/scrap/entities/scrap.entity';
+import {getScrapByUser,Scrap } from '@/services/scrap';
 
 import styles from './HistoryCard.module.scss';
-import { createScrap,getScrapByUser } from '@/services/scrap';
-import { useQuery } from 'react-query';
 
 type Props = {
-  resume: Resume;
+  id: string;
 };
 
 const HistoryCard: React.FC<Props> = () => {
-  const router = useRouter();
-  const [rows,setRows] = useState([]);
+
+  const [rows,setRows] = useState<Scrap[]>([]);
 
   const { t } = useTranslation();
 
 
 useEffect(() => {
-  getScrapByUser(2).then(res => {
+  getScrapByUser({userId:2}).then(res => {
           console.log(res);
           setRows(res);
 
@@ -44,7 +28,6 @@ useEffect(() => {
     })
   
 
-  const dispatch = useAppDispatch();
 
   const columns: GridColDef[] = [
   // { field: 'id', headerName: 'ID', headerClassName: 'superHeader', width: 70 },
@@ -59,85 +42,13 @@ useEffect(() => {
   
 ];
 
-  const sendRowToServer = (myrow)=>{
-    createScrap(myrow).then(res => {
-      console.log("hello"+res);
-        console.log(myrow);
-        // console.log(params.row)
-        window.open(myrow.link, '_blank').focus();
-      })
-      .catch(err => console.log(err));
-    }
 
 
 
 
-  const [anchorEl, setAnchorEl] = useState<Element | null>(null);
 
-  const { mutateAsync: duplicateMutation } = useMutation<Resume, ServerError, DuplicateResumeParams>(duplicateResume);
+  
 
-  const { mutateAsync: deleteMutation } = useMutation<void, ServerError, DeleteResumeParams>(deleteResume);
-
-  const handleOpen = () => {
-    handleClose();
-
-    router.push({
-      pathname: '/[username]/[slug]/build',
-      query: { username: resume.user.username, slug: resume.slug },
-    });
-  };
-
-  const handleOpenMenu = (event: React.MouseEvent<Element>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  const handleRename = () => {
-    handleClose();
-
-    dispatch(
-      setModalState({
-        modal: 'dashboard.rename-resume',
-        state: {
-          open: true,
-          payload: {
-            item: resume,
-            onComplete: () => {
-              queryClient.invalidateQueries(RESUMES_QUERY);
-            },
-          },
-        },
-      })
-    );
-  };
-
-  const handleDuplicate = async () => {
-    handleClose();
-
-    await duplicateMutation({ id: resume.id });
-
-    queryClient.invalidateQueries(RESUMES_QUERY);
-  };
-
-  const handleShareLink = async () => {
-    handleClose();
-
-    const url = getResumeUrl(resume, { withHost: true });
-    await navigator.clipboard.writeText(url);
-
-    toast.success(t<string>('common.toast.success.resume-link-copied'));
-  };
-
-  const handleDelete = async () => {
-    handleClose();
-
-    await deleteMutation({ id: resume.id });
-
-    queryClient.invalidateQueries(RESUMES_QUERY);
-  };
 
 
   

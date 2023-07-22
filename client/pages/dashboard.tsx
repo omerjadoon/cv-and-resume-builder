@@ -1,4 +1,5 @@
 import { Add, ImportExport } from '@mui/icons-material';
+import axios from "axios";
 import type { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -7,8 +8,9 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useEffect, useState } from "react";
 import { useQuery } from 'react-query';
 import { ActionCreators } from 'redux-undo';
-import RecommendationCard from '@/components/dashboard/RecommendationCard';
+
 import HistoryCard from '@/components/dashboard/HistoryCard';
+import RecommendationCard from '@/components/dashboard/RecommendationCard';
 import ResumeCard from '@/components/dashboard/ResumeCard';
 import ResumePreview from '@/components/dashboard/ResumePreview';
 import Avatar from '@/components/shared/Avatar';
@@ -17,7 +19,6 @@ import { RESUMES_QUERY } from '@/constants/index';
 import { fetchResumes } from '@/services/resume';
 import { useAppDispatch } from '@/store/hooks';
 import styles from '@/styles/pages/Dashboard.module.scss';
-import axios from "axios";
 
 
 export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => ({
@@ -28,70 +29,6 @@ export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => ({
 
 
 
-const rows_jobs = [
-  { id: 1,
-  source:"Indeed", 
-  title: 'Data Scientist', 
-  company: 'Express Scripts',
-  skills:"['SAP', 'SQL']",
-  city:"St. Louis",
-  date: "24/05/2023" ,
-  url:"https://www.indeed.com/rc/clk?jk=6a105f495c36afe3&fccid=281a27deb89bbe92&vjs=3"
-},
-   
-
-   { id: 2,
-  source:"Indeed", 
-  title: 'Data Scientist', 
-  company: 'Money Mart Financial Services',
-  skills:"['Machine Learning', 'R', 'SAS', 'SQL', 'Python']",
-  city:"Dallas",
-  date: "24/05/2023" ,
-  url:"https://www.indeed.com/rc/clk?jk=86afd561ea8c60bc&fccid=b584cf601069b5d0&vjs=3"
-}, 
- { id: 3,
-  source:"Indeed", 
-  title: 'Machine Learning Scientist II', 
-  company: 'Microsoft',
-  skills:"['Natural Language Processing', 'Hive', 'Spark', 'Microsoft Powerpoint', 'Machine Learning', 'Hadoop', 'MATLAB', 'Python']",
-  city:"Redmond",
-  date: "24/05/2023" ,
-  url:"https://www.indeed.com/rc/clk?jk=b0b692b299eeeac4&fccid=734cb5a01ee60f80&vjs=3"
-},
-   
-
-   { id: 4,
-  source:"Indeed", 
-  title: 'Supply Chain Data Scientist', 
-  company: 'Ford Motor Company',
-  skills:"['Java', 'Alteryx', 'Data Mining', 'MATLAB', 'R', 'SAS', 'Python', 'SQL']",
-  city:"Dearborn",
-  date: "24/05/2023" ,
-  url:"https://www.indeed.com/rc/clk?jk=1f173ff8b3a0337a&fccid=761c44c17d636bfe&vjs=3"
-}, 
-];
-const rows_history = [
-  { id: 3,
-  source:"Indeed", 
-  title: 'Machine Learning Scientist II', 
-  company: 'Microsoft',
-  skills:"['Natural Language Processing', 'Hive', 'Spark', 'Microsoft Powerpoint', 'Machine Learning', 'Hadoop', 'MATLAB', 'Python']",
-  city:"Redmond",
-  date: "24/05/2023" ,
-  url:"https://www.indeed.com/rc/clk?jk=b0b692b299eeeac4&fccid=734cb5a01ee60f80&vjs=3"
-},
-   
-
-   { id: 4,
-  source:"Indeed", 
-  title: 'Supply Chain Data Scientist', 
-  company: 'Ford Motor Company',
-  skills:"['Java', 'Alteryx', 'Data Mining', 'MATLAB', 'R', 'SAS', 'Python', 'SQL']",
-  city:"Dearborn",
-  date: "24/05/2023" ,
-  url:"https://www.indeed.com/rc/clk?jk=1f173ff8b3a0337a&fccid=761c44c17d636bfe&vjs=3"
-}, 
-];
 const Dashboard: NextPage = () => {
 
 const [scrape, setScrape] = useState([]);
@@ -104,7 +41,7 @@ const [selectedJob, setSelectedJob] = useState("linkedin");
 function search() {
   console.log("search")
     setScrape([]);
-    let body = {
+    const body = {
       title: title,
       location: location
     };
@@ -196,7 +133,7 @@ function search() {
       <div><h3>JOB Recommendations</h3></div>
        <RecommendationCard key="12" rows={scrape} />
        <div><h3>Job History / Applied Jobs</h3></div>
-      <HistoryCard key="16"  />
+      <HistoryCard key="16" id="2" />
     </div>
   );
 };

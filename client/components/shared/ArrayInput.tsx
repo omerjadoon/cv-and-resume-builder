@@ -1,3 +1,4 @@
+import { GrammarlyEditorPlugin } from "@grammarly/editor-sdk-react";
 import { Add, Delete } from '@mui/icons-material';
 import { IconButton, InputAdornment, TextField } from '@mui/material';
 import get from 'lodash/get';
@@ -45,7 +46,7 @@ const ArrayInput: React.FC<Props> = ({ value, label, onChange, errors, className
 
       <div className={styles.inputGrid}>
         {items.map((value, index) => (
-           <GrammarlyEditorPlugin clientId="client_DV4CwAZB6H6CaSqA4XHaSE">
+           <GrammarlyEditorPlugin clientId="client_DV4CwAZB6H6CaSqA4XHaSE" key="112">
           <TextField
             key={index}
             value={value}
