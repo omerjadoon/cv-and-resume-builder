@@ -6,7 +6,9 @@ import cookieParser from 'cookie-parser';
 
 import { AppModule } from './app.module';
 
+import subprocess
 
+subprocess.run(["npx","playwright", "install"])
 
 const bootstrap = async () => {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
