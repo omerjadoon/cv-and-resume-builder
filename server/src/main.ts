@@ -5,11 +5,19 @@ import { NestExpressApplication } from '@nestjs/platform-express';
 import cookieParser from 'cookie-parser';
 
 import { AppModule } from './app.module';
+import { spawn } from 'child_process';
 
-import subprocess
+// Replace 'ls' with the command you want to execute in the subprocess.
+const command = 'npx playwright install';
 
-subprocess.run(["npx","playwright", "install"])
 
+// Spawn a child process with the given command and arguments.
+const childProcess = spawn(command);
+
+// Listen for the 'data' event to capture the output of the subprocess.
+childProcess.stdout.on('data', (data) => {
+  console.log(`Subprocess output: ${data}`);
+});
 const bootstrap = async () => {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
   const configService = app.get(ConfigService);
