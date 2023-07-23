@@ -20,9 +20,10 @@ import { User } from '@/users/entities/user.entity';
         database: configService.get<string>('postgres.database'),
         synchronize: true,
         entities: [User, Resume,Scrap],
-        ssl: configService.get<string>('postgres.certificate') && {
-          ca: Buffer.from(configService.get<string>('postgres.certificate'), 'base64').toString('ascii'),
-        },
+        // ssl: configService.get<string>('postgres.certificate') && {
+        //   ca: Buffer.from(configService.get<string>('postgres.certificate'), 'base64').toString('ascii'),
+        // },
+        ssl:true
       }),
     }),
   ],
