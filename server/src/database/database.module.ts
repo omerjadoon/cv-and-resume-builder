@@ -23,7 +23,7 @@ import { User } from '@/users/entities/user.entity';
         // ssl: configService.get<string>('postgres.certificate') && {
         //   ca: Buffer.from(configService.get<string>('postgres.certificate'), 'base64').toString('ascii'),
         // },
-        ssl:{ rejectUnauthorized: false }
+        
       }),
     }),
   ],
