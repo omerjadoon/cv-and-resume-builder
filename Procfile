@@ -1,2 +1,2 @@
-web: npx playwright install && pnpm start && sudo npx playwright install-deps
+web: sudo npx playwright install-deps && pnpm start
 
