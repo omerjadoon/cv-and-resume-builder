@@ -6,7 +6,8 @@
   "logo": "https://app.tooljet.io/assets/images/logo.svg",
   "success_url": "/",
   "scripts":{
-    "predeploy": "npm install && npm run build && npx playwright install"
+    "predeploy": "npm install && npm run build",
+    "heroku-cleanup":"npx playwright install"
   },
   "env": {
     "NODE_ENV": {
