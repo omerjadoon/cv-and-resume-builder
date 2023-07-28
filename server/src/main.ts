@@ -22,7 +22,8 @@ const bootstrap = async () => {
   app.useGlobalPipes(new ValidationPipe({ transform: true }));
 
   // Server Port
-  const port = configService.get<number>('app.port');
+  // const port = configService.get<number>('app.port');
+  const port = process.env.PORT || 3100;
   await app.listen(port);
 
   Logger.log(`🚀 Server is up and running!`);
