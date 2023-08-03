@@ -20,10 +20,10 @@ services:
       - POSTGRES_PASSWORD=postgres
 
   server:
-    image: amruthpillai/reactive-resume:server-latest
-    # build:
-    #   context: .
-    #   dockerfile: ./server/Dockerfile
+    #image: amruthpillai/reactive-resume:server-latest
+    build:
+      context: .
+      dockerfile: ./server/Dockerfile
     restart: always
     ports:
       - 3100:3100
@@ -59,10 +59,10 @@ services:
       - PDF_DELETION_TIME=
 
   client:
-    image: amruthpillai/reactive-resume:client-latest
-    # build:
-    #   context: .
-    #   dockerfile: ./client/Dockerfile
+    #image: amruthpillai/reactive-resume:client-latest
+    build:
+      context: .
+      dockerfile: ./client/Dockerfile
     restart: always
     ports:
       - 3000:3000
