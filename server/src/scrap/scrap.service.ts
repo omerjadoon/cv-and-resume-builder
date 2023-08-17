@@ -53,6 +53,7 @@ export class ScrapService {
 
 
 console.log(createScrapDto.title)
+console.log("scrap service")
 
 
      try {
@@ -105,6 +106,7 @@ console.log(createScrapDto.title)
   const { title, location } = linkedinScrapDto;
    
     const result = await linkedinScrape(title, location)
+    console.log(result)
 
     const rawdata = fs.readFileSync('linkedin_scraped_data.json');
     const dataObj = JSON.parse(rawdata);

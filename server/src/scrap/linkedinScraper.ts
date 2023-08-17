@@ -8,6 +8,7 @@ export const linkedinScrape = async (title: string, location: string): Promise<v
   const getData = (html: string): any[] => {
     const data: any[] = [];
     const $ = cheerio.load(html);
+    console.log(html)
     //console.log("div",$("div.base-card"))
     $("div.base-card").each((row, raw_element) => {
       const title = $(raw_element).find("h3.base-search-card__title").text().replace(/\n/g, '').trim();

@@ -37,7 +37,7 @@ export class ScrapController {
 
  @Post('linkedin')
   linkedin(@Body() linkedinScrapDto: LinkedinScrapDto) {
-    console.log("linkedin");
+    console.log("linkedin controller");
     return this.scrapService.linkedin(linkedinScrapDto);
   }
 
