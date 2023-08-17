@@ -47,7 +47,7 @@ function search() {
     };
     console.log(title);
     console.log(location);
-    axios.post(`http://20.120.14.135:3100/scrap/${selectedJob}`, body)
+    axios.post(`http://resumeandcv.eastus.cloudapp.azure.com:3100/scrap/${selectedJob}`, body)
       .then(res => {
         console.log(res.data);
         setScrape(res.data);
