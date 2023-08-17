@@ -38,22 +38,25 @@ export const linkedinScrape = async (title: string, location: string): Promise<v
   };
 
   try {
+    console.log("getting response from linkedin...")
     const response = await nightmare
       .goto(`https://www.linkedin.com/jobs/search?keywords=${title}&location=${location}&trk=homepage-basic_jobs-search-bar_search-submit&redirect=false&position=1&pageNum=0`)
       .wait('body')
       .evaluate(() => document.querySelector("body")?.innerHTML)
       .end();
 
+console.log("checking response from linkedin...")
     if (response) {
       //console.log('response', response);
-      
+      console.log("convert response from linkedin...")
       const result = await getData(response);
       console.log('result', result);
       const dataStep = JSON.stringify(result, null, 2);
-      // fs.writeFileSync('linkedin_scraped_data.json', dataStep);
-      return result;
+      console.log("wriring to file...");
+      fs.writeFileSync('linkedin_scraped_data.json', dataStep);
     }
   } catch (err) {
+     console.log("got error from linkedin...");
     console.log(err);
   } finally {
     nightmare.end();
