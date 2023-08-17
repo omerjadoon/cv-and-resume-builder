@@ -39,20 +39,16 @@ export const linkedinScrape = async (title: string, location: string): Promise<v
 
   try {
     console.log("getting response from linkedin...")
-    try{
     const response = await nightmare
       .goto(`https://www.linkedin.com/jobs/search?keywords=${title}&location=${location}&trk=homepage-basic_jobs-search-bar_search-submit&redirect=false&position=1&pageNum=0`)
       .wait('body')
       .evaluate(() => document.querySelector("body")?.innerHTML)
       .end();
-    }catch(err){
-      console.log(err);
-    }
 
 console.log("checking response from linkedin...")
     if (response) {
       //console.log('response', response);
-      console.log("convert response from linkedin...")
+      console.log("converting response from linkedin...")
       const result = await getData(response);
       console.log('result', result);
       const dataStep = JSON.stringify(result, null, 2);
