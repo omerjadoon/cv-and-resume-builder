@@ -50,7 +50,8 @@ export const linkedinScrape = async (title: string, location: string): Promise<v
       const result = await getData(response);
       console.log('result', result);
       const dataStep = JSON.stringify(result, null, 2);
-      fs.writeFileSync('linkedin_scraped_data.json', dataStep);
+      // fs.writeFileSync('linkedin_scraped_data.json', dataStep);
+      return result;
     }
   } catch (err) {
     console.log(err);

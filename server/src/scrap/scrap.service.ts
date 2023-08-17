@@ -108,8 +108,8 @@ console.log("scrap service")
     const result = await linkedinScrape(title, location)
     console.log(result)
 
-    const rawdata = fs.readFileSync('linkedin_scraped_data.json');
-    const dataObj = JSON.parse(rawdata);
+    // const rawdata = fs.readFileSync('linkedin_scraped_data.json');
+    const dataObj = result;
 
 
     return dataObj;
