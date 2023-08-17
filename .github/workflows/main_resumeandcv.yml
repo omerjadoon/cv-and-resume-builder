@@ -28,7 +28,7 @@ jobs:
       
       - name: npm install, build, and test
         run: |
-          pnpm install
+          pnpm install --no-frozen-lockfile
           pnpm run build --if-present
 
       - name: Upload artifact for deployment job
