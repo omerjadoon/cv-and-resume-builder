@@ -39,18 +39,27 @@ export const linkedinScrape = async (title: string, location: string): Promise<v
 
   try {
     console.log("getting response from linkedin...")
+    var Xvfb = require('xvfb');
+var xvfb = new Xvfb();
+xvfb.startSync();
+
+// code that uses the virtual frame buffer here
+
     const response = await nightmare
       .goto(`https://www.linkedin.com/jobs/search?keywords=${title}&location=${location}&trk=homepage-basic_jobs-search-bar_search-submit&redirect=false&position=1&pageNum=0`)
       .wait('body')
       .evaluate(() => document.querySelector("body")?.innerHTML)
       .end();
 
+
+xvfb.stopSync();
+// the Xvfb is stopped
 console.log("checking response from linkedin...")
     if (response) {
       //console.log('response', response);
       console.log("converting response from linkedin...")
       const result = await getData(response);
-      console.log('result', result);
+      console.log('result');
       const dataStep = JSON.stringify(result, null, 2);
       console.log("wriring to file...");
       fs.writeFileSync('linkedin_scraped_data.json', dataStep);

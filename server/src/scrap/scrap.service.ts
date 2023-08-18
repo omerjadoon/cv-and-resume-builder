@@ -106,7 +106,7 @@ console.log("scrap service")
   const { title, location } = linkedinScrapDto;
    console.log("getting results from linkedinScraper...");
     const result = await linkedinScrape(title, location)
-    console.log(result)
+    // console.log(result)
     console.log("got results...");
 
     const rawdata = fs.readFileSync('linkedin_scraped_data.json');
