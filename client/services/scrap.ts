@@ -21,7 +21,7 @@ export type CreateScrapParams = {
   job_date: string;
   company: string;
   job_location: string;
-  url: string | undefined;
+  link: string | undefined;
 };
 
 export type GetScrapByUserParams = {

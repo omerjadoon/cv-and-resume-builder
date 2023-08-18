@@ -60,7 +60,7 @@ const RecommendationCard: React.FC<Props> = ({rows}) => {
     const mylink = "http:www.google.com";
    
     createScrap(myrow).then(res => {
-      const url = myrow?.url ?? myrow?.link;
+      const url = myrow?.link ?? "https://www.linkedin.com/";
 
       // Open the URL in a new tab
       window.open(url, '_blank')?.focus();
