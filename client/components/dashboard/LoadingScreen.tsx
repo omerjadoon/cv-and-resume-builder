@@ -1,4 +1,4 @@
-import styles from './ResumePreview.module.scss';
+import styles from './LoadingScreen.module.scss';
 
 export const LoadingScreen = () => {
     return (
