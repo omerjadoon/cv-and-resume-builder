@@ -19,6 +19,7 @@ import { RESUMES_QUERY } from '@/constants/index';
 import { fetchResumes } from '@/services/resume';
 import { useAppDispatch } from '@/store/hooks';
 import styles from '@/styles/pages/Dashboard.module.scss';
+import {LoadingScreen} from "@/components/dashboard/LoadingScreen"
 
 
 export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => ({
@@ -77,7 +78,7 @@ async function search() {
   }, []);
 
   if (!data) return null;
-  if (isLoading) return <p>Loading...</p>
+  if (isLoading) return <LoadingScreen/>
 
   return (
     <div className={styles.container}>
