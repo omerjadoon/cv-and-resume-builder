@@ -10,6 +10,7 @@ import { useQuery } from 'react-query';
 import { ActionCreators } from 'redux-undo';
 
 import HistoryCard from '@/components/dashboard/HistoryCard';
+import {LoadingScreen} from "@/components/dashboard/LoadingScreen"
 import RecommendationCard from '@/components/dashboard/RecommendationCard';
 import ResumeCard from '@/components/dashboard/ResumeCard';
 import ResumePreview from '@/components/dashboard/ResumePreview';
@@ -19,7 +20,6 @@ import { RESUMES_QUERY } from '@/constants/index';
 import { fetchResumes } from '@/services/resume';
 import { useAppDispatch } from '@/store/hooks';
 import styles from '@/styles/pages/Dashboard.module.scss';
-import {LoadingScreen} from "@/components/dashboard/LoadingScreen"
 
 
 export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => ({
