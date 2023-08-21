@@ -141,7 +141,7 @@ function async search() {
             name="location"
             className={styles.input}
           />
-           <button className={styles.button} onClick={search}>Search</button>
+           <button disabled={isLoading} className={styles.button} onClick={search}>Search</button>
       </div>
       <div><h3>JOB Recommendations</h3></div>
 
