@@ -39,7 +39,7 @@ const [isLoading, setLoading] = useState(false)
 
 
 
-function async search() {
+async function search() {
   console.log("search")
     setLoading(true)
     setScrape([]);
@@ -61,10 +61,10 @@ function async search() {
         setScrape(res.data);
         setLoading(false)
       })
-      .catch(err => {console.log(err)
+      .catch(err => {
+        console.log(err);
         setLoading(false)
-    }
-        );
+      });
   }
   const { t } = useTranslation();
 
