@@ -35,11 +35,13 @@ const [scrape, setScrape] = useState([]);
 const [title, setTitle] = useState("");
 const [location, setLocation] = useState("");
 const [selectedJob, setSelectedJob] = useState("linkedin");
+const [isLoading, setLoading] = useState(false)
 
 
 
-function search() {
+function async search() {
   console.log("search")
+    setLoading(true)
     setScrape([]);
     const body = {
       title: title,
@@ -54,12 +56,15 @@ function search() {
     //   })
     //   .catch(err => console.log(err));
 
-    axios.post(`http://20.120.14.135:3100/scrap/${selectedJob}`, body)
+   await axios.post(`http://20.120.14.135:3100/scrap/${selectedJob}`, body)
       .then(res => {
-        console.log(res.data);
         setScrape(res.data);
+        setLoading(false)
       })
-      .catch(err => console.log(err));
+      .catch(err => {console.log(err)
+        setLoading(false)
+    }
+        );
   }
   const { t } = useTranslation();
 
@@ -72,6 +77,7 @@ function search() {
   }, []);
 
   if (!data) return null;
+  if (isLoading) return <p>Loading...</p>
 
   return (
     <div className={styles.container}>
@@ -138,6 +144,7 @@ function search() {
            <button className={styles.button} onClick={search}>Search</button>
       </div>
       <div><h3>JOB Recommendations</h3></div>
+
        <RecommendationCard key="12" rows={scrape} />
        <div><h3>Job History / Applied Jobs</h3></div>
       <HistoryCard key="16" id="2" />
