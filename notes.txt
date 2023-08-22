@@ -6,3 +6,4 @@ Ba...33
 
 killall -9 node
 
+sudo -u postgres psql
