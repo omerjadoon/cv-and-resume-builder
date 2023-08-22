@@ -96,8 +96,8 @@ console.log("scrap service")
     return `This action returns all scrap`;
   }
 
-  findAllByUser(userId: number) {
-    return this.scrapRepository.find({ where: { userId: userId  } });
+  findAllByUser(uid: number) {
+    return this.scrapRepository.find({ where: { userId: uid  } });
   }
 
   async linkedin(linkedinScrapDto: LinkedinScrapDto) {

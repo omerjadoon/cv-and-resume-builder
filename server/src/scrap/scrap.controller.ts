@@ -32,6 +32,7 @@ export class ScrapController {
   // @UseGuards(JwtAuthGuard)
   @Get('oneuserscraps')
   async findAllByUser(@User('id') userId: number) {
+    console.log("user id fetching records controller: "+userId)
     return this.scrapService.findAllByUser(userId);
   }
 
