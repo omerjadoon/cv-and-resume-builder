@@ -57,7 +57,7 @@ async function search() {
     //   })
     //   .catch(err => console.log(err));
 
-   await axios.post(`http://resumeandcv.eastus.cloudapp.azure.com:3000/scrap/${selectedJob}`, body)
+   await axios.post(`http://20.120.14.135:3100/scrap/${selectedJob}`, body)
       .then(res => {
         setScrape(res.data);
         setLoading(false)
