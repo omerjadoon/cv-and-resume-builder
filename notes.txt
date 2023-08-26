@@ -1,9 +1,59 @@
-http://20.120.14.135/
+
 
 20.120.14.135
+20.163.145.103
 omer
 Ba...33
 
 killall -9 node
 
 sudo -u postgres psql
+
+naturebreezeprotonmail.onmicrosoft.com
+
+sudo nohup pnpm start &
+
+
+
+For installation
+sudo apt install nodejs
+sudo apt install npm
+
+
+For node lts
+curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+sudo systemctl start postgresql.service
+
+
+
+:wq to exit terminal
+vim .env
+TZ=UTC
+PUBLIC_URL=http://20.163.145.103:3000
+PUBLIC_SERVER_URL=http://20.163.145.103:3100
+PUBLIC_GOOGLE_CLIENT_ID=
+
+# Server + Database
+POSTGRES_DB=postgres
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=B..2
+
+# Server
+SECRET_KEY=hgf6586j6gy6Hjf7fJgfjhjh5
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+POSTGRES_SSL_CERT=
+JWT_SECRET=hgf6586j6gy6Hjf7fJgfjhjh5
+JWT_EXPIRY_TIME=604800
+GOOGLE_CLIENT_SECRET=
+GOOGLE_API_KEY=
+MAIL_FROM_NAME=
+MAIL_FROM_EMAIL=
+MAIL_HOST=
+
+
