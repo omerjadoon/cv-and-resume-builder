@@ -92,7 +92,7 @@ async function search() {
         <Link href="/">
           <Logo size={40} />
         </Link>
-        <h2>Job and Resume Dashboard</h2>
+        <h2>Hire Safari - Job and Resume Dashboard</h2>
         <Avatar size={40} />
       </header>
 
