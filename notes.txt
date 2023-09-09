@@ -57,3 +57,112 @@ MAIL_FROM_EMAIL=
 MAIL_HOST=
 
 
+
+
+
+
+
+
+
+sudo apt-get update
+sudo apt-get install postgresql postgresql-contrib
+su - postgres
+
+
+cat filename to display output
+\password
+
+sudo apt-get update
+sudo apt-get install -y ca-certificates curl gnupg
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+
+NODE_MAJOR=20
+echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+
+sudo apt-get update
+sudo apt-get install nodejs -y
+
+
+sudo apk add --no-cache g++ git curl make python3 libc6-compat 
+&& curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm
+
+
+
+
+sudo apt install nginx
+
+sudo nano /etc/systemd/system/cv.service
+
+
+[Unit]
+Description=Your Node.js App
+
+[Service]
+ExecStart=pnpm start
+Restart=always
+User=omer
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+
+sudo nano /etc/nginx/sites-available/cv
+
+
+
+
+
+server {
+    listen 80;
+    server_name hiresafari.eastus.cloudapp.azure.com;
+
+    location / {
+        proxy_pass http://localhost:3000; # Forward requests to your Node.js app
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+
+server {
+    listen 80;
+    server_name hiresafari.com;
+
+    location / {
+        proxy_pass http://localhost:3000; # Forward requests to your Node.js app
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+
+
+server {
+    listen 80;
+    server_name www.hiresafari.com;
+
+    location / {
+        proxy_pass http://localhost:3000; # Forward requests to your Node.js app
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+
+
+
+sudo ln -s /etc/nginx/sites-available/cv /etc/nginx/sites-enabled/
+
+
+
+
