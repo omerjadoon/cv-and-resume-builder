@@ -58,7 +58,7 @@ const Layout = () => {
 
   return (
     <>
-      <Heading
+      {/*<Heading
         path="metadata.layout"
         name={t<string>('builder.rightSidebar.sections.layout.heading')}
         action={
@@ -68,7 +68,9 @@ const Layout = () => {
             </IconButton>
           </Tooltip>
         }
-      />
+      />*/}
+    <h4 className="font-medium">{t<string>('builder.rightSidebar.sections.layout.heading')}</h4>
+
 
       <DragDropContext onDragEnd={onDragEnd}>
         {/* Pages */}

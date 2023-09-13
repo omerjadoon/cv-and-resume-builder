@@ -55,7 +55,8 @@ const Export = () => {
 
   return (
     <>
-      <Heading path="metadata.export" name={t<string>('builder.rightSidebar.sections.export.heading')} />
+      {/*<Heading path="metadata.export" name={t<string>('builder.rightSidebar.sections.export.heading')} />*/}
+<h4 className="font-medium">{t<string>('builder.rightSidebar.sections.export.heading')}</h4>
 
       <List sx={{ padding: 0 }}>
         <ListItem sx={{ padding: 0 }}>

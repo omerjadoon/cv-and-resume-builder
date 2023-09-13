@@ -102,81 +102,9 @@
       }
     }
   },
-  "leftSidebar": {
-    "metadata": {
-      "templates": {
-        "heading": "Templates",
-        "form": {
-          "awarder": {
-            "label": "Awarder"
-          }
-        }
-      },
-
-      "layout": {
-        "heading": "Layout",
-        "form": {
-          "awarder": {
-            "label": "Awarder"
-          }
-        }
-      },
-
-      "typography": {
-        "heading": "typography",
-        "form": {
-          "awarder": {
-            "label": "Awarder"
-          }
-        }
-      },
-      "theme": {
-        "heading": "Theme",
-        "form": {
-          "awarder": {
-            "label": "Awarder"
-          }
-        }
-      },
-      "sharing": {
-        "heading": "Sharing",
-        "form": {
-          "awarder": {
-            "label": "Awarder"
-          }
-        }
-      },
-      "export": {
-        "heading": "Export",
-        "form": {
-          "awarder": {
-            "label": "Awarder"
-          }
-        }
-      },
-      "css": {
-        "heading": "css",
-        "form": {
-          "awarder": {
-            "label": "Awarder"
-          }
-        }
-      },
-      "setting": {
-        "heading": "Settings",
-        "form": {
-          "awarder": {
-            "label": "Awarder"
-          }
-        }
-      },
-    },
-
-
-
+  "leftSidebar": {   
     "sections": {
       "awards": {
-        "heading": "Awards",
         "form": {
           "awarder": {
             "label": "Awarder"
@@ -221,16 +149,7 @@
           }
         }
       },
-      "work": {
-        "heading": "Work",
-          },
-      "education": {
-        "heading": "Education",
-          },
-
       "certifications": {
-        "heading": "Certifications",
-
         "form": {
           "issuer": {
             "label": "Issuer"
@@ -253,6 +172,13 @@
           },
           "institution": {
             "label": "Institution"
+          }
+        }
+      },
+      "experience": {
+        "form": {
+          "name": {
+            "label": "Company Name"
           }
         }
       },
@@ -286,64 +212,127 @@
         "heading": "Profiles",
         "heading_one": "Profile"
       },
+      "work": {
+        "form": {
+          "network": {
+            "label": "Network"
+          },
+          "username": {
+            "label": "Username"
+          }
+        },
+        "heading": "Work Experience",
+        "heading_one": "Work Experience"
+      },
+      "education": {
+        "form": {
+          "network": {
+            "label": "Network"
+          },
+          "username": {
+            "label": "Username"
+          }
+        },
+        "heading": "Education",
+        "heading_one": "Education"
+      },
+      "awards": {
+        "form": {
+          "network": {
+            "label": "Network"
+          },
+          "username": {
+            "label": "Username"
+          }
+        },
+        "heading": "Awards",
+        "heading_one": "Awards"
+      },
+      "certifications": {
+        "form": {
+          "network": {
+            "label": "Network"
+          },
+          "username": {
+            "label": "Username"
+          }
+        },
+        "heading": "Certifications",
+        "heading_one": "Certifications"
+      },
+
+
       "publications": {
-        "heading": "Publications",
         "form": {
           "publisher": {
             "label": "Publisher"
           }
-        }
-      },
-      "interests": {
-        "heading": "interests",
-        "form": {
-          "publisher": {
-            "label": "Publisher"
-          }
-        }
-      },
-      "languages": {
-        "heading": "languages",
-        "form": {
-          "publisher": {
-            "label": "Publisher"
-          }
-        }
-      },
-      "skills": {
-        "heading": "Skills",
-        "form": {
-          "publisher": {
-            "label": "Publisher"
-          }
-        }
+        },
+        "heading": "publications",
+        "heading_one": "publications"
       },
       "references": {
-        "heading": "references",
         "form": {
           "relationship": {
             "label": "Relationship"
           }
-        }
-      },
-      "projects": {
-        "heading": "projects",
-        "form": {
-          "publisher": {
-            "label": "Publisher"
-          }
-        }
+        },
+        "heading": "references",
+        "heading_one": "references"
       },
       "section": {
         "heading": "Section"
       },
       "volunteer": {
-        "heading": "Volunteer",
         "form": {
           "organization": {
             "label": "Organization"
           }
-        }
+        },
+        "heading": "volunteer",
+        "heading_one": "volunteer"
+
+      }
+      ,
+      "skills": {
+        "form": {
+          "organization": {
+            "label": "Organization"
+          }
+        },
+        "heading": "skills",
+        "heading_one": "skills"
+
+      },
+      "languages": {
+        "form": {
+          "organization": {
+            "label": "Organization"
+          }
+        },
+        "heading": "languages",
+        "heading_one": "languages"
+
+      },
+      "interests": {
+        "form": {
+          "organization": {
+            "label": "Organization"
+          }
+        },
+        "heading": "interests",
+        "heading_one": "interests"
+
+      },
+      "projects": {
+        "form": {
+          "organization": {
+            "label": "Organization"
+          }
+        },
+        "heading": "projects",
+        "heading_one": "projects"
+
       }
     }
   },
@@ -356,7 +345,7 @@
         "heading": "Export",
         "json": {
           "primary": "JSON",
-          "secondary": "Download a JSON version of your resume that can be imported back into CV Builder."
+          "secondary": "Download a JSON version of your resume that can be imported back into Reactive Resume."
         },
         "pdf": {
           "loading": {
@@ -377,15 +366,15 @@
       },
       "links": {
         "bugs-features": {
-          "body": "",
-          "button": "",
-          "heading": ""
+          "body": "Something stopping you from making a resume? Or do you have an amazing idea to add? Raise an issue on GitHub to get started.",
+          "button": "GitHub Issues",
+          "heading": "Bugs? Feature Requests?"
         },
         "docs": "Documentation",
         "donate": {
-          "body": "",
-          "button": "",
-          "heading": ""
+          "body": "If you liked using Reactive Resume, please consider donating as much as you can to the cause of keeping the app up and running, without ads and free forever.",
+          "button": "Buy me a coffee",
+          "heading": "Donate to Reactive Resume"
         },
         "github": "Source Code",
         "heading": "Links",

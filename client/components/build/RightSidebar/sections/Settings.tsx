@@ -96,7 +96,8 @@ const Settings = () => {
 
   return (
     <>
-      <Heading path="metadata.settings" name={t<string>('builder.rightSidebar.sections.settings.heading')} />
+      {/*<Heading path="metadata.settings" name={t<string>('builder.rightSidebar.sections.settings.heading')} />*/}
+<h4 className="font-medium">{t<string>('builder.rightSidebar.sections.settings.heading')}</h4>
 
       <List disablePadding>
         {/* Global Settings */}

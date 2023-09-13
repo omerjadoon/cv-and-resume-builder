@@ -29,15 +29,16 @@ const Basics = () => {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div className="grid items-center gap-4 sm:col-span-2 sm:grid-cols-3">
           <div className="mx-auto">
-            <PhotoUpload />
+            {/*<PhotoUpload />*/}
           </div>
+          <ResumeInput label={t<string>('builder.leftSidebar.sections.basics.name.label')} path="basics.name" className="sm:col-span-2" />
+
 
           <div className="grid w-full gap-2 sm:col-span-2">
-            <ResumeInput label={t<string>('builder.leftSidebar.sections.basics.name.label')} path="basics.name" />
-
-            <Button variant="outlined" startIcon={<PhotoFilter />} onClick={handleClick}>
+            
+            {/*<Button variant="outlined" startIcon={<PhotoFilter />} onClick={handleClick}>
               {t<string>('builder.leftSidebar.sections.basics.actions.photo-filters')}
-            </Button>
+            </Button>*/}
 
             <Popover
               open={Boolean(anchorEl)}

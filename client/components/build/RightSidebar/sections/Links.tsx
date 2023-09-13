@@ -9,7 +9,7 @@ const Links = () => {
 
   return (
     <>
-      <Heading path="metadata.links" name={t<string>('builder.rightSidebar.sections.links.heading')} />
+      {/*<Heading path="metadata.links" name="Links" />*/}
 
       <div className={styles.container}>
         

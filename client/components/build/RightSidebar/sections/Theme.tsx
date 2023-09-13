@@ -26,7 +26,8 @@ const Theme = () => {
 
   return (
     <>
-      <Heading path="metadata.theme" name={t<string>('builder.rightSidebar.sections.theme.heading')} />
+      {/*<Heading path="metadata.theme" name={t<string>('builder.rightSidebar.sections.theme.heading')} />*/}
+<h4 className="font-medium">{t<string>('builder.rightSidebar.sections.theme.heading')}</h4>
 
       <div className={styles.container}>
         <div className={styles.colorOptions}>

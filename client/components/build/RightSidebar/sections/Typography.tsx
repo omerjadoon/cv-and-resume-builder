@@ -98,7 +98,8 @@ const Typography = () => {
 
   return (
     <>
-      <Heading path="metadata.typography" name={t<string>('builder.rightSidebar.sections.typography.heading')} />
+      {/*<Heading path="metadata.typography" name="{t<string>('builder.rightSidebar.sections.typography.heading')}" />*/}
+<h4 className="font-medium">{t<string>('builder.rightSidebar.sections.typography.heading')}</h4>
 
       <Widgets
         label={t<string>('builder.rightSidebar.sections.typography.widgets.headings.label')}

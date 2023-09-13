@@ -122,7 +122,7 @@ async function search() {
        <input
             type="text"
             onChange={e => setTitle(e.target.value)}
-            placeholder="Job Title"
+            placeholder="Please enter Job Title"
             name="title"
             className={styles.input}
           />
@@ -138,7 +138,7 @@ async function search() {
           <input
             type="text"
             onChange={e => setLocation(e.target.value)}
-            placeholder="Location"
+            placeholder="Location, City, Postal Code or Country"
             name="location"
             className={styles.input}
           />

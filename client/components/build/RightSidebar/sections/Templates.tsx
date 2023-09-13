@@ -24,7 +24,8 @@ const Templates = () => {
 
   return (
     <>
-      <Heading path="metadata.templates" name={t<string>('builder.rightSidebar.sections.templates.heading')} />
+      {/*<Heading path="metadata.templates" name="{t<string>('builder.rightSidebar.sections.templates.heading')}" />*/}
+<h4 className="font-medium">{t<string>('builder.rightSidebar.sections.templates.heading')}</h4>
 
       <div className={styles.container}>
         {Object.values(templateMap).map((template) => (

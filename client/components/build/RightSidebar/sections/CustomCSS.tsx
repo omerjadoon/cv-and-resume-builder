@@ -27,7 +27,8 @@ const CustomCSS = () => {
 
   return (
     <>
-      <Heading path="metadata.css" name={t<string>('builder.rightSidebar.sections.css.heading')} isHideable />
+      {/*<Heading path="metadata.css" name={t<string>('builder.rightSidebar.sections.css.heading')} isHideable />*/}
+<h4 className="font-medium">{t<string>('builder.rightSidebar.sections.css.heading')}</h4>
 
       <Editor
         height="200px"
