@@ -1,0 +1,405 @@
+
+> resumeandcv@1.0.0 start /home/omer/cv
+> env-cmd --silent cross-var cross-env VERSION=$npm_package_version turbo run start
+
+• Packages in scope: @reactive-resume/client, @reactive-resume/schema, @reactive-resume/server
+• Running start in 3 packages
+• Remote caching disabled
+@reactive-resume/server:start: cache miss, executing 0201685beccd5bc8
+@reactive-resume/client:start: cache miss, executing 40b336448883b1f4
+@reactive-resume/client:start: 
+@reactive-resume/client:start: > @reactive-resume/client@1.0.0 start /home/omer/cv/client
+@reactive-resume/client:start: > react-env --prefix PUBLIC -- next start
+@reactive-resume/client:start: 
+@reactive-resume/client:start: react-env: Writing runtime env /home/omer/cv/client/public/__ENV.js
+@reactive-resume/server:start: 
+@reactive-resume/server:start: > @reactive-resume/server@1.0.0 start /home/omer/cv/server
+@reactive-resume/server:start: > node dist/main
+@reactive-resume/server:start: 
+@reactive-resume/client:start: ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +36ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMailModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCacheModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDiscoveryModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServeStaticModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTerminusModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScheduleModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +3ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMailModule dependencies initialized[39m[38;5;3m +17ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +5ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrinterModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [33m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [33m   WARN[39m [33mDEPRECATED! "CacheModule" (from the "@nestjs/common" package) is deprecated and will be removed in the next major release. Please, use the "@nestjs/cache-manager" package instead.[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFontsModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +142ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResumeModule dependencies initialized[39m[38;5;3m +3ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScrapModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntegrationsModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +11ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth, GET} route[39m[38;5;3m +2ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/google, POST} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/register, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/forgot-password, POST} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/reset-password, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/update-profile, PATCH} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth, DELETE} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mResumeController {/resume}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume, POST} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/short/:shortId, GET} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:username/:slug, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id, PATCH} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/all, DELETE} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id, DELETE} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id/duplicate, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id/sample, POST} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id/reset, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id/photo, PUT} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id/photo, DELETE} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFontsController {/fonts}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/fonts, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntegrationsController {/integrations}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/integrations/linkedin, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/integrations/json-resume, POST} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/integrations/reactive-resume, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/integrations/reactive-resume-v2, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPrinterController {/printer}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/printer/:username/:slug, GET} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/health}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mScrapController {/scrap}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap/oneuserscraps, GET} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap/linkedin, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap/:id, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap/:id, PATCH} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 17818  - [39m09/08/2023, 11:22:21 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap/:id, DELETE} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: node:internal/process/promises:289
+@reactive-resume/server:start:             triggerUncaughtException(err, true /* fromPromise */);
+@reactive-resume/server:start:             ^
+@reactive-resume/server:start: 
+@reactive-resume/server:start: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium-1071/chrome-linux/chrome
+@reactive-resume/server:start: ╔═════════════════════════════════════════════════════════════════════════╗
+@reactive-resume/server:start: ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+@reactive-resume/server:start: ║ Please run the following command to download new browsers:              ║
+@reactive-resume/server:start: ║                                                                         ║
+@reactive-resume/server:start: ║     npx playwright install                                              ║
+@reactive-resume/server:start: ║                                                                         ║
+@reactive-resume/server:start: ║ <3 Playwright Team                                                      ║
+@reactive-resume/server:start: ╚═════════════════════════════════════════════════════════════════════════╝
+@reactive-resume/server:start:     at PrinterService.onModuleInit (/home/omer/cv/server/dist/printer/printer.service.js:26:61)
+@reactive-resume/server:start:     at MapIterator.iteratee (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/hooks/on-module-init.hook.js:22:43)
+@reactive-resume/server:start:     at MapIterator.next (/home/omer/cv/node_modules/.pnpm/iterare@1.2.1/node_modules/iterare/lib/map.js:13:39)
+@reactive-resume/server:start:     at IteratorWithOperators.next (/home/omer/cv/node_modules/.pnpm/iterare@1.2.1/node_modules/iterare/lib/iterate.js:21:28)
+@reactive-resume/server:start:     at IteratorWithOperators.toArray (/home/omer/cv/node_modules/.pnpm/iterare@1.2.1/node_modules/iterare/lib/iterate.js:180:22)
+@reactive-resume/server:start:     at callOperator (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/hooks/on-module-init.hook.js:23:10)
+@reactive-resume/server:start:     at callModuleInitHook (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/hooks/on-module-init.hook.js:43:23)
+@reactive-resume/server:start:     at NestApplication.callInitHook (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/nest-application-context.js:224:50)
+@reactive-resume/server:start:     at async NestApplication.init (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/nest-application.js:98:9)
+@reactive-resume/server:start:     at async NestApplication.listen (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/nest-application.js:168:33)
+@reactive-resume/server:start:     at async bootstrap (/home/omer/cv/server/dist/main.js:20:5) {
+@reactive-resume/server:start:   name: 'Error'
+@reactive-resume/server:start: }
+@reactive-resume/server:start: 
+@reactive-resume/server:start: Node.js v20.6.1
+@reactive-resume/server:start:  ELIFECYCLE  Command failed with exit code 1.
+@reactive-resume/server:start: ERROR: command finished with error: command (/home/omer/cv/server) pnpm run start exited (1)
+@reactive-resume/client:start:  ELIFECYCLE  Command failed.
+@reactive-resume/server#start: command (/home/omer/cv/server) pnpm run start exited (1)
+
+ Tasks:    0 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    6.184s 
+Failed:    @reactive-resume/server#start
+
+ ERROR  run failed: command  exited (1)
+ ELIFECYCLE  Command failed with exit code 1.
+
+> resumeandcv@1.0.0 start /home/omer/cv
+> env-cmd --silent cross-var cross-env VERSION=$npm_package_version turbo run start
+
+• Packages in scope: @reactive-resume/client, @reactive-resume/schema, @reactive-resume/server
+• Running start in 3 packages
+• Remote caching disabled
+@reactive-resume/server:start: cache miss, executing 0201685beccd5bc8
+@reactive-resume/client:start: cache miss, executing 40b336448883b1f4
+@reactive-resume/server:start: 
+@reactive-resume/server:start: > @reactive-resume/server@1.0.0 start /home/omer/cv/server
+@reactive-resume/server:start: > node dist/main
+@reactive-resume/server:start: 
+@reactive-resume/client:start: 
+@reactive-resume/client:start: > @reactive-resume/client@1.0.0 start /home/omer/cv/client
+@reactive-resume/client:start: > react-env --prefix PUBLIC -- next start
+@reactive-resume/client:start: 
+@reactive-resume/client:start: react-env: Writing runtime env /home/omer/cv/client/public/__ENV.js
+@reactive-resume/client:start: ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +32ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMailModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCacheModule dependencies initialized[39m[38;5;3m +3ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDiscoveryModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServeStaticModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTerminusModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScheduleModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +8ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMailModule dependencies initialized[39m[38;5;3m +17ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +14ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrinterModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [33m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [33m   WARN[39m [33mDEPRECATED! "CacheModule" (from the "@nestjs/common" package) is deprecated and will be removed in the next major release. Please, use the "@nestjs/cache-manager" package instead.[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFontsModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +143ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResumeModule dependencies initialized[39m[38;5;3m +3ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScrapModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntegrationsModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +14ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth, GET} route[39m[38;5;3m +3ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/google, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/register, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/forgot-password, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/reset-password, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/update-profile, PATCH} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth, DELETE} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mResumeController {/resume}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume, POST} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/short/:shortId, GET} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:username/:slug, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id, PATCH} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/all, DELETE} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id, DELETE} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id/duplicate, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id/sample, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id/reset, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id/photo, PUT} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id/photo, DELETE} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFontsController {/fonts}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/fonts, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntegrationsController {/integrations}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/integrations/linkedin, POST} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/integrations/json-resume, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/integrations/reactive-resume, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/integrations/reactive-resume-v2, POST} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPrinterController {/printer}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/printer/:username/:slug, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/health}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health, GET} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mScrapController {/scrap}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap/oneuserscraps, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap/linkedin, POST} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap/:id, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap/:id, PATCH} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21260  - [39m09/08/2023, 11:55:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap/:id, DELETE} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: node:internal/process/promises:289
+@reactive-resume/server:start:             triggerUncaughtException(err, true /* fromPromise */);
+@reactive-resume/server:start:             ^
+@reactive-resume/server:start: 
+@reactive-resume/server:start: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium-1071/chrome-linux/chrome
+@reactive-resume/server:start: ╔═════════════════════════════════════════════════════════════════════════╗
+@reactive-resume/server:start: ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+@reactive-resume/server:start: ║ Please run the following command to download new browsers:              ║
+@reactive-resume/server:start: ║                                                                         ║
+@reactive-resume/server:start: ║     npx playwright install                                              ║
+@reactive-resume/server:start: ║                                                                         ║
+@reactive-resume/server:start: ║ <3 Playwright Team                                                      ║
+@reactive-resume/server:start: ╚═════════════════════════════════════════════════════════════════════════╝
+@reactive-resume/server:start:     at PrinterService.onModuleInit (/home/omer/cv/server/dist/printer/printer.service.js:26:61)
+@reactive-resume/server:start:     at MapIterator.iteratee (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/hooks/on-module-init.hook.js:22:43)
+@reactive-resume/server:start:     at MapIterator.next (/home/omer/cv/node_modules/.pnpm/iterare@1.2.1/node_modules/iterare/lib/map.js:13:39)
+@reactive-resume/server:start:     at IteratorWithOperators.next (/home/omer/cv/node_modules/.pnpm/iterare@1.2.1/node_modules/iterare/lib/iterate.js:21:28)
+@reactive-resume/server:start:     at IteratorWithOperators.toArray (/home/omer/cv/node_modules/.pnpm/iterare@1.2.1/node_modules/iterare/lib/iterate.js:180:22)
+@reactive-resume/server:start:     at callOperator (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/hooks/on-module-init.hook.js:23:10)
+@reactive-resume/server:start:     at callModuleInitHook (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/hooks/on-module-init.hook.js:43:23)
+@reactive-resume/server:start:     at NestApplication.callInitHook (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/nest-application-context.js:224:50)
+@reactive-resume/server:start:     at async NestApplication.init (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/nest-application.js:98:9)
+@reactive-resume/server:start:     at async NestApplication.listen (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/nest-application.js:168:33)
+@reactive-resume/server:start:     at async bootstrap (/home/omer/cv/server/dist/main.js:20:5) {
+@reactive-resume/server:start:   name: 'Error'
+@reactive-resume/server:start: }
+@reactive-resume/server:start: 
+@reactive-resume/server:start: Node.js v20.6.1
+@reactive-resume/server:start:  ELIFECYCLE  Command failed with exit code 1.
+@reactive-resume/server:start: ERROR: command finished with error: command (/home/omer/cv/server) pnpm run start exited (1)
+@reactive-resume/client:start:  ELIFECYCLE  Command failed.
+@reactive-resume/server#start: command (/home/omer/cv/server) pnpm run start exited (1)
+
+ Tasks:    0 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    6.013s 
+Failed:    @reactive-resume/server#start
+
+ ERROR  run failed: command  exited (1)
+ ELIFECYCLE  Command failed with exit code 1.
+
+> resumeandcv@1.0.0 start /home/omer/cv
+> env-cmd --silent cross-var cross-env VERSION=$npm_package_version turbo run start
+
+• Packages in scope: @reactive-resume/client, @reactive-resume/schema, @reactive-resume/server
+• Running start in 3 packages
+• Remote caching disabled
+@reactive-resume/client:start: cache miss, executing 40b336448883b1f4
+@reactive-resume/server:start: cache miss, executing 0201685beccd5bc8
+@reactive-resume/client:start: 
+@reactive-resume/client:start: > @reactive-resume/client@1.0.0 start /home/omer/cv/client
+@reactive-resume/client:start: > react-env --prefix PUBLIC -- next start
+@reactive-resume/client:start: 
+@reactive-resume/server:start: 
+@reactive-resume/server:start: > @reactive-resume/server@1.0.0 start /home/omer/cv/server
+@reactive-resume/server:start: > node dist/main
+@reactive-resume/server:start: 
+@reactive-resume/client:start: react-env: Writing runtime env /home/omer/cv/client/public/__ENV.js
+@reactive-resume/client:start: ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:37 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +36ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDatabaseModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMailModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMulterModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCacheModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDiscoveryModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServeStaticModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTerminusModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScheduleModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHealthModule dependencies initialized[39m[38;5;3m +3ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMailModule dependencies initialized[39m[38;5;3m +16ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +9ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrinterModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [33m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [33m   WARN[39m [33mDEPRECATED! "CacheModule" (from the "@nestjs/common" package) is deprecated and will be removed in the next major release. Please, use the "@nestjs/cache-manager" package instead.[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFontsModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +170ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mResumeModule dependencies initialized[39m[38;5;3m +3ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScrapModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntegrationsModule dependencies initialized[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth}:[39m[38;5;3m +10ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth, GET} route[39m[38;5;3m +2ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/google, POST} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/register, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/forgot-password, POST} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/reset-password, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/update-profile, PATCH} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth, DELETE} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mResumeController {/resume}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume, POST} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/short/:shortId, GET} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:username/:slug, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id, GET} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id, PATCH} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/all, DELETE} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id, DELETE} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id/duplicate, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id/sample, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id/reset, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id/photo, PUT} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/resume/:id/photo, DELETE} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFontsController {/fonts}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/fonts, GET} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntegrationsController {/integrations}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/integrations/linkedin, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/integrations/json-resume, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/integrations/reactive-resume, POST} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/integrations/reactive-resume-v2, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPrinterController {/printer}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/printer/:username/:slug, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mHealthController {/health}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/health, GET} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mScrapController {/scrap}:[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap, POST} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap/oneuserscraps, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap/linkedin, POST} route[39m[38;5;3m +1ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap/:id, GET} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap/:id, PATCH} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: [32m[Nest] 21483  - [39m09/08/2023, 11:55:38 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/scrap/:id, DELETE} route[39m[38;5;3m +0ms[39m
+@reactive-resume/server:start: node:internal/process/promises:289
+@reactive-resume/server:start:             triggerUncaughtException(err, true /* fromPromise */);
+@reactive-resume/server:start:             ^
+@reactive-resume/server:start: 
+@reactive-resume/server:start: browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium-1071/chrome-linux/chrome
+@reactive-resume/server:start: ╔═════════════════════════════════════════════════════════════════════════╗
+@reactive-resume/server:start: ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+@reactive-resume/server:start: ║ Please run the following command to download new browsers:              ║
+@reactive-resume/server:start: ║                                                                         ║
+@reactive-resume/server:start: ║     npx playwright install                                              ║
+@reactive-resume/server:start: ║                                                                         ║
+@reactive-resume/server:start: ║ <3 Playwright Team                                                      ║
+@reactive-resume/server:start: ╚═════════════════════════════════════════════════════════════════════════╝
+@reactive-resume/server:start:     at PrinterService.onModuleInit (/home/omer/cv/server/dist/printer/printer.service.js:26:61)
+@reactive-resume/server:start:     at MapIterator.iteratee (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/hooks/on-module-init.hook.js:22:43)
+@reactive-resume/server:start:     at MapIterator.next (/home/omer/cv/node_modules/.pnpm/iterare@1.2.1/node_modules/iterare/lib/map.js:13:39)
+@reactive-resume/server:start:     at IteratorWithOperators.next (/home/omer/cv/node_modules/.pnpm/iterare@1.2.1/node_modules/iterare/lib/iterate.js:21:28)
+@reactive-resume/server:start:     at IteratorWithOperators.toArray (/home/omer/cv/node_modules/.pnpm/iterare@1.2.1/node_modules/iterare/lib/iterate.js:180:22)
+@reactive-resume/server:start:     at callOperator (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/hooks/on-module-init.hook.js:23:10)
+@reactive-resume/server:start:     at callModuleInitHook (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/hooks/on-module-init.hook.js:43:23)
+@reactive-resume/server:start:     at NestApplication.callInitHook (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/nest-application-context.js:224:50)
+@reactive-resume/server:start:     at async NestApplication.init (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/nest-application.js:98:9)
+@reactive-resume/server:start:     at async NestApplication.listen (/home/omer/cv/node_modules/.pnpm/@nestjs+core@9.4.3_@nestjs+common@9.4.3_@nestjs+platform-express@9.4.3_reflect-metadata@0.1.13_rxjs@7.8.1/node_modules/@nestjs/core/nest-application.js:168:33)
+@reactive-resume/server:start:     at async bootstrap (/home/omer/cv/server/dist/main.js:20:5) {
+@reactive-resume/server:start:   name: 'Error'
+@reactive-resume/server:start: }
+@reactive-resume/server:start: 
+@reactive-resume/server:start: Node.js v20.6.1
+@reactive-resume/server:start:  ELIFECYCLE  Command failed with exit code 1.
+@reactive-resume/server:start: ERROR: command finished with error: command (/home/omer/cv/server) pnpm run start exited (1)
+@reactive-resume/client:start:  ELIFECYCLE  Command failed.
+@reactive-resume/server#start: command (/home/omer/cv/server) pnpm run start exited (1)
+
+ Tasks:    0 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    6.049s 
+Failed:    @reactive-resume/server#start
+
+ ERROR  run failed: command  exited (1)
+ ELIFECYCLE  Command failed with exit code 1.
