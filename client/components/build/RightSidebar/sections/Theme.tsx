@@ -4,7 +4,6 @@ import { useTranslation } from 'next-i18next';
 
 import ColorAvatar from '@/components/shared/ColorAvatar';
 import ColorPicker from '@/components/shared/ColorPicker';
-import Heading from '@/components/shared/Heading';
 import { colorOptions } from '@/config/colors';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { setResumeState } from '@/store/resume/resumeSlice';

@@ -5,7 +5,6 @@ import { useTranslation } from 'next-i18next';
 import { useMemo, useState } from 'react';
 import toast from 'react-hot-toast';
 
-import Heading from '@/components/shared/Heading';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { setResumeState } from '@/store/resume/resumeSlice';
 import getResumeUrl from '@/utils/getResumeUrl';
