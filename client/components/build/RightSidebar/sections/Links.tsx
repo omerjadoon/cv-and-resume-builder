@@ -1,7 +1,5 @@
 import { useTranslation } from 'next-i18next';
 
-import Heading from '@/components/shared/Heading';
-
 import styles from './Links.module.scss';
 
 const Links = () => {

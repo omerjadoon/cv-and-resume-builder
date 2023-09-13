@@ -6,7 +6,6 @@ import get from 'lodash/get';
 import { useTranslation } from 'next-i18next';
 import React from 'react';
 
-import Heading from '@/components/shared/Heading';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { setResumeState } from '@/store/resume/resumeSlice';
 

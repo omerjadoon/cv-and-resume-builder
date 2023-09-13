@@ -4,7 +4,6 @@ import get from 'lodash/get';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 
-import Heading from '@/components/shared/Heading';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { setResumeState } from '@/store/resume/resumeSlice';
 import templateMap, { TemplateMeta } from '@/templates/templateMap';

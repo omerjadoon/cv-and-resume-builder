@@ -1,12 +1,11 @@
 import { DragDropContext, Draggable, DraggableLocation, Droppable, DropResult } from '@hello-pangea/dnd';
-import { Add, Close, Restore } from '@mui/icons-material';
+import { Add, Close } from '@mui/icons-material';
 import { Button, IconButton, Tooltip } from '@mui/material';
 import clsx from 'clsx';
 import cloneDeep from 'lodash/cloneDeep';
 import get from 'lodash/get';
 import { useTranslation } from 'next-i18next';
 
-import Heading from '@/components/shared/Heading';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { addPage, deletePage, setResumeState } from '@/store/resume/resumeSlice';
 
@@ -50,11 +49,6 @@ const Layout = () => {
 
   const handleDeletePage = (page: number) => dispatch(deletePage({ page }));
 
-  const handleResetLayout = () => {
-    for (let i = layout.length - 1; i > 0; i--) {
-      handleDeletePage(i);
-    }
-  };
 
   return (
     <>

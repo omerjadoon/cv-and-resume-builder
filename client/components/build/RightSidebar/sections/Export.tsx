@@ -6,7 +6,6 @@ import pick from 'lodash/pick';
 import { useTranslation } from 'next-i18next';
 import { useMutation } from 'react-query';
 
-import Heading from '@/components/shared/Heading';
 import { ServerError } from '@/services/axios';
 import { printResumeAsPdf, PrintResumeAsPdfParams } from '@/services/printer';
 import { useAppSelector } from '@/store/hooks';

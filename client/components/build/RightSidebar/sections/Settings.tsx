@@ -18,7 +18,6 @@ import { useTranslation } from 'next-i18next';
 import { useMemo, useState } from 'react';
 import { useMutation } from 'react-query';
 
-import Heading from '@/components/shared/Heading';
 import ThemeSwitch from '@/components/shared/ThemeSwitch';
 import { Language, languageMap, languages } from '@/config/languages';
 import { ServerError } from '@/services/axios';

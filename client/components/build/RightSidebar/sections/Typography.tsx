@@ -5,7 +5,6 @@ import isEmpty from 'lodash/isEmpty';
 import { useTranslation } from 'next-i18next';
 import { useQuery } from 'react-query';
 
-import Heading from '@/components/shared/Heading';
 import { FONTS_QUERY } from '@/constants/index';
 import { fetchFonts } from '@/services/fonts';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';

@@ -35,7 +35,7 @@ const Dashboard: NextPage = () => {
 const [scrape, setScrape] = useState([]);
 const [title, setTitle] = useState("");
 const [location, setLocation] = useState("");
-const [selectedJob, setSelectedJob] = useState("linkedin");
+const [selectedJob] = useState("linkedin");
 const [isLoading, setLoading] = useState(false)
 
 
