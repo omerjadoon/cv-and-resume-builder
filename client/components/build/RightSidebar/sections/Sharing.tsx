@@ -34,7 +34,9 @@ const Sharing = () => {
 
   return (
     <>
-      <Heading path="metadata.sharing" name={t<string>('builder.rightSidebar.sections.sharing.heading')} />
+      {/*<Heading path="metadata.sharing" name={t<string>(`builder.rightSidebar.sections.sharing.heading`)} />*/}
+      <h4 className="font-medium">{t<string>('builder.rightSidebar.sections.sharing.heading')}</h4>
+
 
       <List sx={{ padding: 0 }}>
         <ListItem className="flex flex-col" sx={{ padding: 0 }}>
