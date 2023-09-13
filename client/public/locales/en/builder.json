@@ -103,8 +103,80 @@
     }
   },
   "leftSidebar": {
+    "metadata": {
+      "templates": {
+        "heading": "Templates",
+        "form": {
+          "awarder": {
+            "label": "Awarder"
+          }
+        }
+      },
+
+      "layout": {
+        "heading": "Layout",
+        "form": {
+          "awarder": {
+            "label": "Awarder"
+          }
+        }
+      },
+
+      "typography": {
+        "heading": "typography",
+        "form": {
+          "awarder": {
+            "label": "Awarder"
+          }
+        }
+      },
+      "theme": {
+        "heading": "Theme",
+        "form": {
+          "awarder": {
+            "label": "Awarder"
+          }
+        }
+      },
+      "sharing": {
+        "heading": "Sharing",
+        "form": {
+          "awarder": {
+            "label": "Awarder"
+          }
+        }
+      },
+      "export": {
+        "heading": "Export",
+        "form": {
+          "awarder": {
+            "label": "Awarder"
+          }
+        }
+      },
+      "css": {
+        "heading": "css",
+        "form": {
+          "awarder": {
+            "label": "Awarder"
+          }
+        }
+      },
+      "setting": {
+        "heading": "Settings",
+        "form": {
+          "awarder": {
+            "label": "Awarder"
+          }
+        }
+      },
+    },
+
+
+
     "sections": {
       "awards": {
+        "heading": "Awards",
         "form": {
           "awarder": {
             "label": "Awarder"
@@ -149,7 +221,16 @@
           }
         }
       },
+      "work": {
+        "heading": "Work",
+          },
+      "education": {
+        "heading": "Education",
+          },
+
       "certifications": {
+        "heading": "Certifications",
+
         "form": {
           "issuer": {
             "label": "Issuer"
@@ -206,6 +287,31 @@
         "heading_one": "Profile"
       },
       "publications": {
+        "heading": "Publications",
+        "form": {
+          "publisher": {
+            "label": "Publisher"
+          }
+        }
+      },
+      "interests": {
+        "heading": "interests",
+        "form": {
+          "publisher": {
+            "label": "Publisher"
+          }
+        }
+      },
+      "languages": {
+        "heading": "languages",
+        "form": {
+          "publisher": {
+            "label": "Publisher"
+          }
+        }
+      },
+      "skills": {
+        "heading": "Skills",
         "form": {
           "publisher": {
             "label": "Publisher"
@@ -213,9 +319,18 @@
         }
       },
       "references": {
+        "heading": "references",
         "form": {
           "relationship": {
             "label": "Relationship"
+          }
+        }
+      },
+      "projects": {
+        "heading": "projects",
+        "form": {
+          "publisher": {
+            "label": "Publisher"
           }
         }
       },
@@ -223,6 +338,7 @@
         "heading": "Section"
       },
       "volunteer": {
+        "heading": "Volunteer",
         "form": {
           "organization": {
             "label": "Organization"
