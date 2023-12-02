@@ -6,8 +6,17 @@ import cookieParser from 'cookie-parser';
 
 import { AppModule } from './app.module';
 
+import fs from 'fs';
+
 const bootstrap = async () => {
-  const app = await NestFactory.create<NestExpressApplication>(AppModule);
+
+const httpsOptions = {
+  key: fs.readFileSync('/etc/letsencrypt/live/hiresafarijobs.com/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/hiresafarijobs.com/fullchain.pem'),
+};
+const app = await NestFactory.create<NestExpressApplication>(AppModule, {
+  httpsOptions,
+});
   const configService = app.get(ConfigService);
 
   const appUrl = configService.get<string>('app.url');

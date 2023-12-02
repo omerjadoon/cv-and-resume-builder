@@ -1,0 +1,7 @@
+
+> @reactive-resume/client@1.0.0 start /home/omer/cv/client
+> react-env --prefix PUBLIC -- next start
+
+react-env: Writing runtime env /home/omer/cv/client/public/__ENV.js
+ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+Killed

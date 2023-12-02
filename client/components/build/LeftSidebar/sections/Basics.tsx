@@ -31,7 +31,7 @@ const Basics = () => {
 
           <div className="grid w-full gap-2 sm:col-span-2">
             
-            {/*<Button variant="outlined" startIcon={<PhotoFilter />} onClick={handleClick}>
+           {/* <Button variant="outlined" startIcon={<PhotoFilter />} onClick={handleClick}>
               {t<string>('builder.leftSidebar.sections.basics.actions.photo-filters')}
             </Button>*/}
 

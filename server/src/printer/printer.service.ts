@@ -47,7 +47,8 @@ export class PrinterService implements OnModuleInit, OnModuleDestroy {
         );
       });
 
-      const url = this.configService.get<string>('app.url');
+    //  const url = this.configService.get<string>('app.url');
+const url = "http://hiresafarijobs.com:3000";
       const secretKey = this.configService.get<string>('app.secretKey');
       const pdfDeletionTime = this.configService.get<number>('cache.pdfDeletionTime');
 

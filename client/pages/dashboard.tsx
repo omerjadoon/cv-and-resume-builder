@@ -57,7 +57,7 @@ async function search() {
     //   })
     //   .catch(err => console.log(err));
 
-   await axios.post(`http://20.115.104.183:3100/scrap/${selectedJob}`, body)
+   await axios.post(`https://hiresafarijobs.com:3100/scrap/${selectedJob}`, body)
       .then(res => {
         setScrape(res.data);
         setLoading(false)
