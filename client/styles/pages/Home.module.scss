@@ -1,5 +1,5 @@
 .container {
-  @apply m-6 grid gap-8 text-center md:m-8 md:text-left;
+  @apply m-6 grid gap-8 text-center md:m-8 md:text-left h-full;
 
   footer {
     @apply flex flex-col items-center justify-between gap-8 sm:flex-row sm:items-end sm:gap-0;

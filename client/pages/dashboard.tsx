@@ -9,9 +9,7 @@ import { useEffect, useState } from "react";
 import { useQuery } from 'react-query';
 import { ActionCreators } from 'redux-undo';
 
-import HistoryCard from '@/components/dashboard/HistoryCard';
 import {LoadingScreen} from "@/components/dashboard/LoadingScreen"
-import RecommendationCard from '@/components/dashboard/RecommendationCard';
 import ResumeCard from '@/components/dashboard/ResumeCard';
 import ResumePreview from '@/components/dashboard/ResumePreview';
 import Avatar from '@/components/shared/Avatar';
@@ -118,24 +116,16 @@ async function search() {
 
 
       </main>
-      <div>
-       <input
+      {/* <div> */}
+       {/* <input
             type="text"
             onChange={e => setTitle(e.target.value)}
             placeholder="Please enter Job Title"
             name="title"
             className={styles.input}
-          />
-         {/* <div>
-          <label class="input">
-            <input type="email" class="input__field" placeholder="Email">
-            <span class="input__label">Email</span>
-            <div class="input__icon-hold">
-              <span class="input__icon" data-feather="mail"></span>
-            </div>
-          </label>
-          </div>*/}
-          <input
+          /> */}
+        
+          {/* <input
             type="text"
             onChange={e => setLocation(e.target.value)}
             placeholder="Location, City, Postal Code or Country"
@@ -143,13 +133,14 @@ async function search() {
             className={styles.input}
           />
            <button disabled={isLoading} className={styles.button} onClick={search}>Search</button>
-      </div>
-      <div><h3>JOB Recommendations</h3></div>
+      </div> */}
+      {/* <div><h3>JOB Recommendations</h3></div>
 
        <RecommendationCard key="12" rows={scrape} />
        <div><h3>Job History / Applied Jobs</h3></div>
-      <HistoryCard key="16" id="2" />
-    </div>
+      <HistoryCard key="16" id="2" /> */}
+    {/* </div> */}
+  </div>
   );
 };
 

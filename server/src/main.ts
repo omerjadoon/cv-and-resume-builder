@@ -9,33 +9,35 @@ import { AppModule } from './app.module';
 import fs from 'fs';
 
 const bootstrap = async () => {
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
-const httpsOptions = {
-  key: fs.readFileSync('/etc/letsencrypt/live/hiresafarijobs.com/privkey.pem'),
-  cert: fs.readFileSync('/etc/letsencrypt/live/hiresafarijobs.com/fullchain.pem'),
-};
-const app = await NestFactory.create<NestExpressApplication>(AppModule, {
-  httpsOptions,
-});
   const configService = app.get(ConfigService);
-
-  const appUrl = configService.get<string>('app.url');
+  const environment = configService.get<string>('NODE_ENV') || 'development';
 
   // Middleware
-  app.enableCors({ origin: '*', credentials: true });
   app.enableShutdownHooks();
   app.use(cookieParser());
-
 
   // Pipes
   app.useGlobalPipes(new ValidationPipe({ transform: true }));
 
   // Server Port
-  // const port = configService.get<number>('app.port');
   const port = process.env.PORT || 3100;
   await app.listen(port);
 
-  Logger.log(`🚀 Server is up and running!`);
+  Logger.log(`🚀 Server is up and running on port ${port} in ${environment} environment!`);
+
+  if (environment === 'production') {
+    // Use Let's Encrypt encryption in production
+    const httpsOptions = {
+      key: fs.readFileSync('/etc/letsencrypt/live/hiresafarijobs.com/privkey.pem'),
+      cert: fs.readFileSync('/etc/letsencrypt/live/hiresafarijobs.com/fullchain.pem'),
+    };
+    app.enableCors({ origin: '*', credentials: true });
+    await app.listen(port, () => {
+      Logger.log(`🔒 HTTPS server is up and running on port ${port} in production environment!`);
+    });
+  }
 };
 
 bootstrap();
