@@ -130,7 +130,7 @@ console.log("scrap service")
           model: 'gpt-3.5-turbo',
           messages: [
             { role: 'system', content: 'You are a helpful resume assistant.' },
-            { role: 'user', content: "give me 5 tips on resume" },
+            { role: 'user', content: input },
           ],
         },
         {
