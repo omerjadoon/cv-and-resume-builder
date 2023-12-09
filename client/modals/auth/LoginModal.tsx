@@ -113,10 +113,10 @@ const LoginModal: React.FC = () => {
             <GoogleLogin onSuccess={handleLoginWithGoogle} onError={handleGoogleLoginError} />
           )}
 
-          <Button type="submit" onClick={handleSubmit(onSubmit)} disabled={isLoading}>
+          <Button type="submit" style={{ backgroundColor: '#EA14DA', color: 'white' }} onClick={handleSubmit(onSubmit)} disabled={isLoading}>
             {t<string>('modals.auth.login.actions.login')}
           </Button>
-          hhh
+        
         </div>
       }
     >
