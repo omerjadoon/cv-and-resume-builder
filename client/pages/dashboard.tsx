@@ -37,7 +37,6 @@ const [selectedJob] = useState("linkedin");
 const [isLoading, setLoading] = useState(false)
 
 
-
 async function search() {
   console.log("search")
     setLoading(true)
@@ -140,6 +139,8 @@ async function search() {
        <div><h3>Job History / Applied Jobs</h3></div>
       <HistoryCard key="16" id="2" /> */}
     {/* </div> */}
+
+    {/* <button className={styles.button} onClick={callChatGPT}>Search</button> */}
   </div>
   );
 };

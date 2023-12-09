@@ -120,6 +120,10 @@ console.log("scrap service")
     return `This action returns a #${id} scrap`;
   }
 
+  callChatGPT(input: string) {
+    return `This action returns a response for #${string} .`;
+  }
+
   update(id: number, updateScrapDto: UpdateScrapDto) {
     return `This action updates a #${id} scrap`;
   }

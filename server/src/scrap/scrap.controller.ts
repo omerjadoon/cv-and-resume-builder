@@ -42,6 +42,13 @@ export class ScrapController {
     return this.scrapService.linkedin(linkedinScrapDto);
   }
 
+  @Post('callChatGPT')
+  callChatGPT(@Body() input: string) {
+    console.log("linkedin controller");
+    return this.scrapService.callChatGPT(input);
+  }
+ 
+
 
   @Get(':id')
   findOne(@Param('id') id: string) {
