@@ -1,15 +1,10 @@
 
-import { CreateScrapDto } from './dto/create-scrap.dto';
-import { LinkedinScrapDto } from './dto/linkedin-scrap.dto';
-import { UpdateScrapDto } from './dto/update-scrap.dto';
-const {linkedinScrape} = require('./linkedinScraper')
-const fs = require('fs');
-
 import { DeleteObjectCommand, PutObjectCommand, S3, S3Client } from '@aws-sdk/client-s3';
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Resume as ResumeSchema } from '@reactive-resume/schema';
+import fs from 'fs';
 import { isEmpty, pick, sample, set } from 'lodash';
 import { nanoid } from 'nanoid';
 import { extname } from 'path';
@@ -18,7 +13,11 @@ import { Repository } from 'typeorm';
 import { PostgresErrorCode } from '@/database/errorCodes.enum';
 import { UsersService } from '@/users/users.service';
 
+import { CreateScrapDto } from './dto/create-scrap.dto';
+import { LinkedinScrapDto } from './dto/linkedin-scrap.dto';
+import { UpdateScrapDto } from './dto/update-scrap.dto';
 import { Scrap } from './entities/scrap.entity';
+import { linkedinScrape } from './linkedinScraper';
 
 
 @Injectable()
@@ -110,7 +109,7 @@ console.log("scrap service")
     console.log("got results...");
 
     const rawdata = fs.readFileSync('linkedin_scraped_data.json');
-    const dataObj = JSON.parse(rawdata);
+    const dataObj = JSON.parse(rawdata.toString());
 
 
     return dataObj;
@@ -121,7 +120,7 @@ console.log("scrap service")
   }
 
   callChatGPT(input: string) {
-    return `This action returns a response for #${string} .`;
+    return `This action returns a response for #${input} .`;
   }
 
   update(id: number, updateScrapDto: UpdateScrapDto) {
