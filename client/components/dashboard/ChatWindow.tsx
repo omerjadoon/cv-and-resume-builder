@@ -26,6 +26,9 @@ const ChatWindow: React.FC = () => {
 
   return (
     <div className={styles['chat-window']}>
+      <h3>Chat GPT Assistant</h3>
+      <p>Hello ! How can i assist you with your resume/career?</p>
+      <br />
       {/* Render messages */}
       <div className={styles['message-container']}>
         {messages.map((message, index) => (
