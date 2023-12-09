@@ -22,6 +22,7 @@ export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => ({
   },
 });
 
+
 const Home: NextPage = () => {
   const { t } = useTranslation();
 
@@ -52,10 +53,10 @@ const Home: NextPage = () => {
               {isLoggedIn ? (
                 <>
                   <Link href="/dashboard" passHref>
-                    <Button>{t<string>('landing.actions.app')}</Button>
+                    <Button style={{ backgroundColor: '#EA14DA', color: 'white' }}>{t<string>('landing.actions.app')}</Button>
                   </Link>
 
-                  <Button variant="outlined" onClick={handleLogout}>
+                  <Button variant="outlined" style={{ color: '#EA14DA' }} onClick={handleLogout}>
                     {t<string>('landing.actions.logout')}
                   </Button>
                 </>
