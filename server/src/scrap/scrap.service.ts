@@ -4,6 +4,7 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Resume as ResumeSchema } from '@reactive-resume/schema';
+import axios from 'axios';
 import fs from 'fs';
 import { isEmpty, pick, sample, set } from 'lodash';
 import { nanoid } from 'nanoid';
@@ -18,7 +19,6 @@ import { LinkedinScrapDto } from './dto/linkedin-scrap.dto';
 import { UpdateScrapDto } from './dto/update-scrap.dto';
 import { Scrap } from './entities/scrap.entity';
 import { linkedinScrape } from './linkedinScraper';
-
 
 @Injectable()
 export class ScrapService {
@@ -119,8 +119,33 @@ console.log("scrap service")
     return `This action returns a #${id} scrap`;
   }
 
-  callChatGPT(input: string) {
-    return `This action returns a response for #${input} .`;
+  async callChatGPT(input: string) {
+    try {
+      // Make a request to the ChatGPT API (replace API_KEY with your actual API key)
+      const response = await axios.post(
+        'https://api.openai.com/v1/chat/completions',
+        {
+          model: 'text-davinci-002',
+          messages: [
+            { role: 'system', content: 'You are a helpful resume assistant.' },
+            { role: 'user', content: input },
+          ],
+        },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+          },
+        }
+      );
+  
+      // Return the output from ChatGPT
+      return { output: response.data.choices[0].message.content };
+    } catch (error) {
+      console.error(error);
+      return { error: 'Internal Server Error' };
+    }
+    
   }
 
   update(id: number, updateScrapDto: UpdateScrapDto) {
