@@ -47,8 +47,14 @@ export class ScrapController {
     console.log("callChatGPT controller");
     console.log(input)
     console.log(typeof input);
-    console.log(JSON.stringify(input));
-    return this.scrapService.callChatGPT(input);
+    const jsonInput = JSON.stringify(input);
+    const parsedObject = JSON.parse(jsonInput);
+
+  // Access the value using the key
+  const inputValue = parsedObject.input;
+
+    console.log(inputValue);
+    return this.scrapService.callChatGPT(inputValue);
   }
  
 
