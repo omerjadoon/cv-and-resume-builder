@@ -121,6 +121,7 @@ console.log("scrap service")
 
   async callChatGPT(input: string) {
     console.log(input.toString())
+
     try {
       // Make a request to the ChatGPT API (replace API_KEY with your actual API key)
       const response = await axios.post(
@@ -128,7 +129,7 @@ console.log("scrap service")
         {
           model: 'text-davinci-002',
           messages: [
-            { role: 'system', content: 'You are a helpful resume assistant.' },
+            { role: 'system', content: 'You are a helpful assistant.' },
             { role: 'user', content: input.toString() },
           ],
         },
