@@ -62,9 +62,9 @@ const Home: NextPage = () => {
                 </>
               ) : (
                 <>
-                  <Button onClick={handleLogin}>{t<string>('landing.actions.login')}</Button>
+                  <Button style={{ backgroundColor: '#EA14DA', color: 'white' }} onClick={handleLogin}>{t<string>('landing.actions.login')}</Button>
 
-                  <Button variant="outlined" onClick={handleRegister} disabled={FLAG_DISABLE_SIGNUPS}>
+                  <Button variant="outlined" style={{ color: '#EA14DA' }} onClick={handleRegister} disabled={FLAG_DISABLE_SIGNUPS}>
                     {t<string>('landing.actions.register')}
                   </Button>
                 </>
