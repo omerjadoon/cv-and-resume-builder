@@ -128,7 +128,7 @@ console.log("scrap service")
           model: 'text-davinci-002',
           messages: [
             { role: 'system', content: 'You are a helpful resume assistant.' },
-            { role: 'user', content: input },
+            { role: 'user', content: input.toString() },
           ],
         },
         {
