@@ -120,6 +120,7 @@ console.log("scrap service")
   }
 
   async callChatGPT(input: string) {
+    console.log(input.toString())
     try {
       // Make a request to the ChatGPT API (replace API_KEY with your actual API key)
       const response = await axios.post(
@@ -143,7 +144,7 @@ console.log("scrap service")
       return { output: response.data.choices[0].message.content };
     } catch (error) {
       console.error(error);
-      return { error: 'Internal Server Error' };
+      return { error: `Internal Server Error ${error}` };
     }
     
   }
