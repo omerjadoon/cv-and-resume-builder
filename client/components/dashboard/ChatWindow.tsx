@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useState } from 'react';
 
 import styles from './ChatWindow.module.scss';
+import { fontWeight } from '@mui/system';
 
 interface Message {
   type: 'user' | 'bot';
@@ -26,7 +27,7 @@ const ChatWindow: React.FC = () => {
 
   return (
     <div className={styles['chat-window']}>
-      <h3>Chat GPT Assistant</h3>
+      <h3 className={styles['chat-head']}>Chat GPT Assistant</h3>
       <p>Hello ! How can i assist you with your resume/career?</p>
       <br />
       {/* Render messages */}
