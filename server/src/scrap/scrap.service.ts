@@ -127,10 +127,10 @@ console.log("scrap service")
       const response = await axios.post(
         'https://api.openai.com/v1/chat/completions',
         {
-          model: 'text-davinci-002',
+          model: 'gpt-3.5-turbo',
           messages: [
             { role: 'system', content: 'You are a helpful assistant.' },
-            { role: 'user', content: input.toString() },
+            { role: 'user', content: "give me 5 tips on resume" },
           ],
         },
         {
