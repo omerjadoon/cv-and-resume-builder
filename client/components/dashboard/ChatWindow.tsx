@@ -2,7 +2,6 @@ import axios from 'axios';
 import { useState } from 'react';
 
 import styles from './ChatWindow.module.scss';
-import { fontWeight } from '@mui/system';
 
 interface Message {
   type: 'user' | 'bot';
