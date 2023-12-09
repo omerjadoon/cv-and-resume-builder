@@ -45,7 +45,9 @@ export class ScrapController {
   @Post('callChatGPT')
   callChatGPT(@Body() input: string) {
     console.log("callChatGPT controller");
-    console.log(input.toString())
+    console.log(input)
+    console.log(typeof input);
+    console.log(JSON.stringify(input));
     return this.scrapService.callChatGPT(input);
   }
  
