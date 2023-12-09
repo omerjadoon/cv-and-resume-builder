@@ -1,6 +1,8 @@
 import axios from 'axios';
 import { useState } from 'react';
 
+import styles from './ChatWindow.module.scss';
+
 interface Message {
   type: 'user' | 'bot';
   content: string;
@@ -23,18 +25,18 @@ const ChatWindow: React.FC = () => {
   };
 
   return (
-    <div className="chat-window">
+    <div className={styles['chat-window']}>
       {/* Render messages */}
-      <div className="message-container">
+      <div className={styles['message-container']}>
         {messages.map((message, index) => (
-          <div key={index} className={message.type}>
+          <div key={index} className={styles[message.type]}>
             {message.content}
           </div>
         ))}
       </div>
 
       {/* Input field and send button */}
-      <div className="input-container">
+      <div className={styles['input-container']}>
         <input type="text" value={input} onChange={(e) => setInput(e.target.value)} />
         <button onClick={handleSendMessage}>Send</button>
       </div>

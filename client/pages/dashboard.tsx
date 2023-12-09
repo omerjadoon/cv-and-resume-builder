@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import { useQuery } from 'react-query';
 import { ActionCreators } from 'redux-undo';
 
+import ChatWindow from '@/components/dashboard/ChatWindow';
 import {LoadingScreen} from "@/components/dashboard/LoadingScreen"
 import ResumeCard from '@/components/dashboard/ResumeCard';
 import ResumePreview from '@/components/dashboard/ResumePreview';
@@ -115,6 +116,9 @@ async function search() {
 
 
       </main>
+      <div>
+        <ChatWindow />
+      </div>
       {/* <div> */}
        {/* <input
             type="text"
