@@ -68,6 +68,7 @@ const Build: NextPage<Props> = ({ username, slug }) => {
 
       <LeftSidebar />
       <Center />
+      
       <RightSidebar />
     </div>
   );

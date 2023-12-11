@@ -3,6 +3,7 @@ import get from 'lodash/get';
 import isEmpty from 'lodash/isEmpty';
 import { TransformComponent, TransformWrapper } from 'react-zoom-pan-pinch';
 
+import ChatWindow from '@/components/dashboard/ChatWindow';
 import { useAppSelector } from '@/store/hooks';
 
 import ArtboardController from './ArtboardController';
@@ -50,6 +51,7 @@ const Center = () => {
           </>
         )}
       </TransformWrapper>
+      <ChatWindow />
     </div>
   );
 };
